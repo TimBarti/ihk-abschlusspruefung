@@ -52,11 +52,53 @@ Folgende Anforderungen sollen von dem Schichtplaner erfüllt sein:
 
 ###3.1. Was ist zur Erfüllung der Zielsetzung erforderlich?
 
+Das Projekt soll agil Entwickelt werden. Kurze Iterationszyklen erlauben häufige Rücksprache mit den Auftraggegebern, was wiederum erlaubt früh auf Änderungswünsche einzugehen. Das gesamte Projekt wird mithilfe von Git versioniert und die einzelnen Aufgaben werden in einem Ticketsystem dokumentiert.
+
 ###3.2. Aufgaben auflisten
 
-###3.3. Grafische und tabellarische Darstellung
+- Analyse
+  - Durchführung einer Ist-Analyse
+  - Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse
+  - Ermittlung von Use-Cases
+  - Erstellung eines Lastenheftes
+-Entwurfe
+  - Erstellung eines ER-Model
+  - Entwurf der API
+  - Markup für das Frontend
+  - Erstellung eines Pflichtenheftes
+-Implementierung
+  - Implementierung der API
+  - Erstellung des Designs
+  - Integrierung der API in das Frontend
+-Deployment
+  - Aufsetzen des Servers
+  - Einrichtung des Continuous Integration-Prozesses
+-Dokumentation
+  - Erstellung der Projektdokumentation
 
 ##4. Projektphasen mit Zeitplanung in Stunden
+
+Analyse | 4h
+--------|---------
+Ist-Analyse | 1h
+Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse | 1h
+Ermittlung von Use-Cases | 0,5h
+Unterstützung des Fachbereichs bei der Erstellung des Lastenheftes | 1,5h
+Entwurf | 6h
+Erstellung eines ER-Model | 1h
+Entwurf der API | 1h
+Markup für das Frontend | 1h
+Erstellung eines Pflichtenheftes | 3h
+Implementierung | 52h
+Implementierung der API | 7h
+Erstellung des Designs | 5h
+Integrierung der API in das Frontend | 30h
+Deployment | 8h
+Aufsetzen des Server | 1h
+Einrichtung des Coninuous Integration-Prozesses | 7h
+Erstellen der Dokumentation | 10h
+Erstellen der Projektdokumentation | 10h
+
 
 ##5. Name der Ausbildungsstätte in dem das Projekt durchgeführt wird
 
