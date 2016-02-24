@@ -57,24 +57,28 @@ Das Projekt soll agil Entwickelt werden. Kurze Iterationszyklen erlauben häufig
 ###3.2. Aufgaben auflisten
 
 - Analyse
-  - Durchführung einer Ist-Analyse
-  - Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse
-  - Ermittlung von Use-Cases
-  - Erstellung eines Lastenheftes
--Entwurfe
-  - Erstellung eines ER-Model
-  - Entwurf der API
-  - Markup für das Frontend
-  - Erstellung eines Pflichtenheftes
--Implementierung
-  - Implementierung der API
-  - Erstellung des Designs
-  - Integrierung der API in das Frontend
--Deployment
-  - Aufsetzen des Servers
-  - Einrichtung des Continuous Integration-Prozesses
+  * Durchführung einer Ist-Analyse
+  * Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse
+  * Ermittlung von Use-Cases
+  * Erstellung eines Lastenheftes
+
+- Entwurfe
+  * Erstellung eines ER-Model
+  * Entwurf der API
+  * Markup für das Frontend
+  * Erstellung eines Pflichtenheftes
+
+- Implementierung
+  * Implementierung der API
+  * Erstellung des Designs
+  * Integrierung der API in das Frontend
+
+- Deployment
+  * Aufsetzen des Servers
+  * Einrichtung des Continuous Integration-Prozesses
+
 -Dokumentation
-  - Erstellung der Projektdokumentation
+  * Erstellung der Projektdokumentation
 
 ##4. Projektphasen mit Zeitplanung in Stunden
 
