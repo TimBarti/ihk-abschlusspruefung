@@ -89,14 +89,14 @@ Erstellung eines ER-Model | 1h
 Entwurf der API | 1h
 Markup für das Frontend | 1h
 Erstellung eines Pflichtenheftes | 3h
-Implementierung | 52h
+**Implementierung** | **52h**
 Implementierung der API | 7h
 Erstellung des Designs | 5h
 Integrierung der API in das Frontend | 30h
-Deployment | 8h
+**Deployment** | **8h**
 Aufsetzen des Server | 1h
 Einrichtung des Coninuous Integration-Prozesses | 7h
-Erstellen der Dokumentation | 10h
+**Erstellen der Dokumentation** | **10h**
 Erstellen der Projektdokumentation | 10h
 
 
