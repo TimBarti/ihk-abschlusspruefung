@@ -2,7 +2,7 @@
 
 ##1. Projektbezeichnung
 
-Entwicklung eines unternehmensinternen Schichtplaners
+Entwicklung eines unternehmensinternen Schichtplaners.
 
 ###1.1. Kurzform der Aufgabenerstellung
 
@@ -16,6 +16,7 @@ intuitives Interface zum erstellen neuer Schichten geben.
 Es gibt im Moment einen Schichtplaner, der auch intern entwickelt wurde.
 Allerdings weist dieser erhebliche Schwächen in der Benutzbarkeit und in der 
 Übersichtlichkeit auf. 
+
 Zum einen wird immer der gesamte Monat abgebildet, allerdings werden auf dem 
 Bildschirm aus Platzgründen nur 2 Wochen angezeigt. Um die restlichen 2 Wochen zu 
 sehen muss man nach rechts scrollen, wobei die Anzeige der Namen verschwindet.
@@ -35,9 +36,17 @@ wollen, gäbe es keine Möglichkeit nur diese anzuzeigen.
 
 ###2.1. Was soll am Ende des Projektes erreicht sein?
 
+Durch den neuen Schichtplaner soll mit AngularJS und Bootstrap ein übersichtliches und 
+schneller Zugriff auf die Schichten erfolgen, dabei dient Rails im Backend als JSON-API.
+
 ###2.2 Welche Anforderungen müssen erfüllt sein
 
-###2.3. Welche Einschränkungen müssen berücksichtigt werden?
+Folgende Anforderungen sollen von dem Schichtplaner erfüllt sein:
+
+- übersichtliche Darstellung
+- Einfache Erstellung und Aktualisierung neuer Schichten
+- Anzeige der Schichten der kommenden und vergangen Wochen
+- Filterung der Angezeigten Schichten
 
 ##3. Projektstrukturplan entwickeln
 
