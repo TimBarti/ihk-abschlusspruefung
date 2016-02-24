@@ -106,4 +106,8 @@ Erstellen der Projektdokumentation | 10h
 
 ##5. Name der Ausbildungsstätte in dem das Projekt durchgeführt wird
 
-###5.1 Name des Ausbilders mit Angabe der Tel.Nr.
+eKomi Limited
+
+###5.1 Name des Ausbilders
+
+Achim Galeski
