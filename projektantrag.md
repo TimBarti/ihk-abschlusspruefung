@@ -24,7 +24,7 @@ Das macht es sehr umständlich die Schichten für einen speziellen Mitarbeiter i
 den letzten 2 Wochen eines Monats herauszufinden.
 
 Ein weiteres Problem ist das immer 3 Monate untereinander angezeigt werden, man 
-muss also sowohl horizontal als auch vertikal scrollen um alle Informationen 
+muss sowohl horizontal als auch vertikal scrollen um alle Informationen 
 zu erfassen und es gibt keine Möglichkeit die Ansicht auf einen bestimmten 
 Zeitrahmen festzulegen.
 
@@ -62,7 +62,7 @@ Das Projekt soll agil Entwickelt werden. Kurze Iterationszyklen erlauben häufig
   * Ermittlung von Use-Cases
   * Erstellung eines Lastenheftes
 
-- Entwurfe
+- Entwürfe
   * Erstellung eines ER-Model
   * Entwurf der API
   * Markup für das Frontend
@@ -77,7 +77,7 @@ Das Projekt soll agil Entwickelt werden. Kurze Iterationszyklen erlauben häufig
   * Aufsetzen des Servers
   * Einrichtung des Continuous Integration-Prozesses
 
--Dokumentation
+- Dokumentation
   * Erstellung der Projektdokumentation
 
 ##4. Projektphasen mit Zeitplanung in Stunden
