@@ -84,7 +84,7 @@ Ist-Analyse | 1h
 Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse | 1h
 Ermittlung von Use-Cases | 0,5h
 Unterstützung des Fachbereichs bei der Erstellung des Lastenheftes | 1,5h
-Entwurf | 6h
+**Entwurf** | **6h**
 Erstellung eines ER-Model | 1h
 Entwurf der API | 1h
 Markup für das Frontend | 1h
