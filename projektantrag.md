@@ -4,14 +4,16 @@
 
 Entwicklung eines unternehmensinternen Schichtplaners.
 
-###1.1. Kurzform der Aufgabenerstellung
+##2. Kurzform der Aufgabenerstellung
 
 Für die eKomi Limited soll ein webbasierter Schichtplaner programmiert werden, 
 welcher den Mitarbeitern einen schnellen und übersichtlichen Zugriff
 auf ihre Schichten ermöglichen soll. Desweiteren soll es für die Teamleiter ein
 intuitives Interface zum erstellen neuer Schichten geben.
 
-###1.2. Ist-Analyse
+##3. Zielsetzung entwickeln - Was soll am Ende des Projektes erreicht werden?
+
+###3.1. Ist-Analyse
 
 Es gibt im Moment einen Schichtplaner, der auch intern entwickelt wurde.
 Allerdings weist dieser erhebliche Schwächen in der Benutzbarkeit und in der 
@@ -32,14 +34,14 @@ Desweiteren gibt es auch sonst keine Möglichkeit die Dargestellten Informatione
 zu filter, sollte man z.B. nur die Mitarbeiter mit einer bestimmten Sprache betrachten
 wollen, gäbe es keine Möglichkeit nur diese anzuzeigen.
 
-##2. Zielsetzung entwickeln / Soll-Konzept
+###3.2. Zielsetzung entwickeln / Soll-Konzept
 
-###2.1. Was soll am Ende des Projektes erreicht sein?
+###3.3. Was soll am Ende des Projektes erreicht sein?
 
 Durch den neuen Schichtplaner soll mit AngularJS und Bootstrap ein übersichtliches und 
 schneller Zugriff auf die Schichten erfolgen, dabei dient Rails im Backend als JSON-API.
 
-###2.2 Welche Anforderungen müssen erfüllt sein
+###3.4 Welche Anforderungen müssen erfüllt sein
 
 Folgende Anforderungen sollen von dem Schichtplaner erfüllt sein:
 
@@ -48,13 +50,13 @@ Folgende Anforderungen sollen von dem Schichtplaner erfüllt sein:
 - Anzeige der Schichten der kommenden und vergangen Wochen
 - Filterung der Angezeigten Schichten
 
-##3. Projektstrukturplan entwickeln
+##4. Projektstrukturplan entwickeln
 
-###3.1. Was ist zur Erfüllung der Zielsetzung erforderlich?
+###4.1. Was ist zur Erfüllung der Zielsetzung erforderlich?
 
 Das Projekt soll agil Entwickelt werden. Kurze Iterationszyklen erlauben häufige Rücksprache mit den Auftraggegebern, was wiederum erlaubt früh auf Änderungswünsche einzugehen. Das gesamte Projekt wird mithilfe von Git versioniert und die einzelnen Aufgaben werden in einem Ticketsystem dokumentiert.
 
-###3.2. Aufgaben auflisten
+###4.2. Aufgaben auflisten
 
 - Analyse
   * Durchführung einer Ist-Analyse
@@ -80,7 +82,7 @@ Das Projekt soll agil Entwickelt werden. Kurze Iterationszyklen erlauben häufig
 - Dokumentation
   * Erstellung der Projektdokumentation
 
-##4. Projektphasen mit Zeitplanung in Stunden
+###4.3. Projektphasen mit Zeitplanung in Stunden
 
 Analyse | 4h
 --------|---------
