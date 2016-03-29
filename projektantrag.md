@@ -78,8 +78,9 @@ Folgende Anforderungen sollen von dem Schichtplaner erfüllt sein:
 
 ###4.2. Projektphasen mit Zeitplanung in Stunden
 
-Analyse | 5h
+Zeitplanung |
 --------|---------
+**Analyse | 5h**
 Ist-Analyse | 1h
 Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse | 1h
 Ermittlung von Use-Cases | 1h
