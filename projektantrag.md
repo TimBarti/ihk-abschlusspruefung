@@ -50,11 +50,7 @@ Folgende Anforderungen sollen von dem Schichtplaner erfüllt sein:
 
 ##4. Projektstrukturplan entwickeln
 
-###4.1. Was ist zur Erfüllung der Zielsetzung erforderlich?
-
-Das Projekt soll agil Entwickelt werden. Kurze Iterationszyklen erlauben häufige Rücksprache mit den Auftraggegebern, was wiederum erlaubt früh auf Änderungswünsche einzugehen. Das gesamte Projekt wird mithilfe von Git versioniert und die einzelnen Aufgaben werden in einem Ticketsystem dokumentiert.
-
-###4.2. Aufgaben auflisten
+###4.1. Aufgaben auflisten
 
 - Analyse
   * Durchführung einer Ist-Analyse
@@ -80,7 +76,7 @@ Das Projekt soll agil Entwickelt werden. Kurze Iterationszyklen erlauben häufig
 - Dokumentation
   * Erstellung der Projektdokumentation
 
-###4.3. Projektphasen mit Zeitplanung in Stunden
+###4.2. Projektphasen mit Zeitplanung in Stunden
 
 Analyse | 5h
 --------|---------
