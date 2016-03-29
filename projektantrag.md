@@ -34,14 +34,12 @@ Desweiteren gibt es auch sonst keine Möglichkeit die Dargestellten Informatione
 zu filter, sollte man z.B. nur die Mitarbeiter mit einer bestimmten Sprache betrachten
 wollen, gäbe es keine Möglichkeit nur diese anzuzeigen.
 
-###3.2. Zielsetzung entwickeln / Soll-Konzept
-
-###3.3. Was soll am Ende des Projektes erreicht sein?
+###3.2. Was soll am Ende des Projektes erreicht sein?
 
 Durch den neuen Schichtplaner soll mit AngularJS und Bootstrap ein übersichtliches und 
 schneller Zugriff auf die Schichten erfolgen, dabei dient Rails im Backend als JSON-API.
 
-###3.4 Welche Anforderungen müssen erfüllt sein
+###3.3 Welche Anforderungen müssen erfüllt sein
 
 Folgende Anforderungen sollen von dem Schichtplaner erfüllt sein:
 
@@ -84,24 +82,24 @@ Das Projekt soll agil Entwickelt werden. Kurze Iterationszyklen erlauben häufig
 
 ###4.3. Projektphasen mit Zeitplanung in Stunden
 
-Analyse | 4h
+Analyse | 5h
 --------|---------
 Ist-Analyse | 1h
 Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse | 1h
-Ermittlung von Use-Cases | 0,5h
-Unterstützung des Fachbereichs bei der Erstellung des Lastenheftes | 1,5h
-**Entwurf** | **6h**
-Erstellung eines ER-Model | 1h
-Entwurf der API | 1h
-Markup für das Frontend | 1h
-Erstellung eines Pflichtenheftes | 3h
-**Implementierung** | **52h**
+Ermittlung von Use-Cases | 1h
+Unterstützung des Fachbereichs bei der Erstellung des Lastenheftes | 2h
+**Entwurf** | **10h**
+Erstellung eines ER-Model | 2h
+Entwurf der API | 2h
+Markup für das Frontend | 2h
+Erstellung eines Pflichtenheftes | 4h
+**Implementierung** | **35h**
 Implementierung der API | 7h
 Erstellung des Designs | 5h
-Integrierung der API in das Frontend | 30h
-**Deployment** | **8h**
-Aufsetzen des Server | 1h
-Einrichtung des Coninuous Integration-Prozesses | 7h
+Integrierung der API in das Frontend | 28h
+**Deployment** | **10h**
+Aufsetzen des Server | 2h
+Einrichtung des Coninuous Integration-Prozesses | 8h
 **Erstellen der Dokumentation** | **10h**
 Erstellen der Projektdokumentation | 10h
 
