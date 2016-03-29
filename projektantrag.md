@@ -96,7 +96,7 @@ Erstellung eines Pflichtenheftes | 4h
 **Implementierung** | **35h**
 Implementierung der API | 7h
 Erstellung des Designs | 5h
-Integrierung der API in das Frontend | 28h
+Integrierung der API in das Frontend | 22h
 **Deployment** | **10h**
 Aufsetzen des Server | 2h
 Einrichtung des Coninuous Integration-Prozesses | 8h
