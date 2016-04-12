@@ -2,58 +2,75 @@
 
 ## Inhaltsverzeichnis
 
-## 1. Einleitung
+## 1 Einleitung
 
-### 1.1. Projektbeschreibung
-### 1.2. Projektziel
-### 1.3. Projektumfeld
-### 1.4. Projektbegründung
-### 1.5. Projektschnittstellen
-### 1.6. Projektabgrenzung
+1.1. Projektbeschreibung
 
-## 2. Projektplanung
+1.2. Projektziel
 
-### 2.1. Projektphasen
-### 2.2. Ressourcenplanung
-### 2.3. Entwicklungsprozess
+1.3. Projektumfeld
 
-## 3. Analysephase
+1.4. Projektbegründung
 
-### 3.1. Ist-Analyse
-### 3.2. Wirtschaftlichkeitsanalyse
-### 3.2.1. "Make or Buy"-Entscheidung
-### 3.2.2. Projektkosten
-### 3.2.3. Amortisationsdauer
-### 3.3. Nicht-monetäre Vorteile
-### 3.4. Anwendungsfälle
-### 3.5. Lastenheft / Fachkonzept
+1.5. Projektschnittstellen
 
-## 4. Entwurfsphase
+1.6. Projektabgrenzung
 
-### 4.1. Zielplattform
-### 4.2. Architekturdesign
-### 4.3. Entwurf der Benutzeroberfläche
-### 4.4. Datenmodell
-### 4.5. Geschäftslogik
-### 4.6. Pflichtenheft
+## 2 Projektplanung
 
-## 5. Implementierungsphase
+### 2.1 Projektphasen
+### 2.2 Ressourcenplanung
+### 2.3 Entwicklungsprozess
 
-### 5.1. Iterationsplaung
-### 5.2. Implementierung der Datenstrukturen
-### 5.3. Implementierung der Geschäftslogik
-### 5.4. Implementierung der Benutzeroberfläche
+## 3 Analysephase
 
-## 6. Abnahme- und Einführungsphase
+### 3.1 Ist-Analyse
+### 3.2 Wirtschaftlichkeitsanalyse
+### 3.2.1 "Make or Buy"-Entscheidung
+### 3.2.2 Projektkosten
+### 3.2.3 Amortisationsdauer
+### 3.3 Nicht-monetäre Vorteile
+### 3.4 Anwendungsfälle
+### 3.5 Lastenheft / Fachkonzept
 
-### 6.1. Abnahme durch den Fachbereich
-### 6.2. Deployment und Einführung
+## 4 Entwurfsphase
 
-## 7. Dokumentation
+### 4.1 Zielplattform
+### 4.2 Architekturdesign
+### 4.3 Entwurf der Benutzeroberfläche
+### 4.4 Datenmodell
+### 4.5 Geschäftslogik
+### 4.6 Pflichtenheft
 
-## 8. Fazit
+## 5 Implementierungsphase
 
-### 8.1. Soll-/Ist-Vergleich
-### 8.2. Lessons Learned
-### 8.3. Ausblick
+### 5.1 Iterationsplaung
+### 5.2 Implementierung der Datenstrukturen
+### 5.3 Implementierung der Geschäftslogik
+### 5.4 Implementierung der Benutzeroberfläche
+
+## 6 Abnahme- und Einführungsphase
+
+### 6.1 Abnahme durch den Fachbereich
+### 6.2 Deployment und Einführung
+
+## 7 Dokumentation
+
+## 8 Fazit
+
+### 8.1 Soll-/Ist-Vergleich
+### 8.2 Lessons Learned
+### 8.3 Ausblick
+
+## 1 Einleitung
+
+Diese Projektdokumentation beschreibt den Ablauf des IHK-Abschlussprojektes, die der Autor
+während seiner Ausbildung zum Fachinformatiker - Anwendungsentwicklung abgeschlossen hat.
+
+Abgeschlossen wurde diese Ausbildung bei der Firma eKomi Limited in Berlin. Das Internet-Startup wurde
+2008 gegründet und beschäftigt im Moment ca. 300 Mitarbeiter.
+
+Das Produkt des Unternehmens ist es für Unternehmen unabhängig Bewertung aufgrund von Transaktionen zu sammeln.
+Zu unsere Kunden zählen größtenteils Onlineshop, allerdings auch Banken und Versicherungen.
+Durch die unabhängig gesammelten Bewertungen, soll bei Neukunden Vertrauen für den Onlineshop geweckt werden.
 
