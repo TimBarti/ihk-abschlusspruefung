@@ -5,8 +5,8 @@
 ### 1 Einleitung
 
 #####1.1. Projektbeschreibung
-#####1.2. Projektziel
-#####1.3. Projektumfeld
+#####1.2. Projektumfeld
+#####1.3. Projektziel
 #####1.4. Projektbegründung
 
 ### 2 Projektplanung
@@ -72,10 +72,19 @@ Durch die unabhängig gesammelten Bewertungen, soll bei Neukunden Vertrauen für
 Bei eKomi sind die einzelnen Abteilungen in der Regel zwischen 10 und 25 Mitarbeiter.
 Die meisten Mitarbeiter haben eine feste Arbeitszeit um unseren Kunden den Support zu garantieren.
 Aus diesem Grund wird jedem Mitarbeiter von dem zuständigen Teamlead eine feste Schicht zugeordnet.
-Innerhalb einer Abteilung gibt es Mitarbeiter mit vielen unterschiedlichen Sprachen, die basirend auf der Sprache bestimmte Schichten belegen müssen.
-Desweiteren muss der Schichtplaner anzeigen, wenn ein Mitarbeiter in Urlaub oder Krank ist.
+Innerhalb einer Abteilung gibt es Mitarbeiter mit vielen unterschiedlichen Sprachen, die basierend auf der Sprache bestimmte Schichten belegen müssen.
+Desweiteren muss der Schichtplaner anzeigen, wenn ein Mitarbeiter im Urlaub oder Krank ist.
 
-####1.2 Projektziel
+####1.2 Projektumfeld
+
+Grundsätzlich wird der Schichtplanner natürlich nur von Leuten aktiv genutzt, die auch in Schichten arbeiten.
+Zum Beispiel unsere Entwicklungsabteilung hat keine festen Arbeitszeiten und kann zwischen 8 - 20 Uhr arbeiten.
+
+Die Leute die feste Schichten haben, lassen sich in 2 Gruppen unterteilen.
+Erstens normale Mitarbeiter die nur bestehende Schichten betrachten und Teamleads die bestehende Schichten
+bearbeiten und neue Schichten und Personen anlegen.
+
+####1.3 Projektziel
 
 Ziel des Projektes ist es einen übersichtlichen und einfach zu benutzenden Online-Schichtplanner zu erstellen.
 
@@ -83,12 +92,7 @@ Der Fokus liegt dabei zum einen auf das betrachten der bereits bestehenden Schic
 Welches bei großen Teams vorallem durch Filteroptionen gewährleistet werden soll.
 Zum anderen soll den Teamleads ein intuitives Interface zum erstellen, bearbeiten und löschen von Daten zur Verfügung gestellt werden.
 
-####1.3 Projektumfeld
 
-- von wem wird der schichtplaner genutzt
-- welcher anforderungen
-- jeder der fest schicht arbeitet
-- teamleads
 
 ####1.4 Projektbegründung
 
