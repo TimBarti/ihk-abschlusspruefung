@@ -69,7 +69,11 @@ Durch die unabhängig gesammelten Bewertungen, soll bei Neukunden Vertrauen für
 
 ####1.1. Projektbeschreibung
 
-- allgemeines problem beschreiben das gelöst werden soll
+Bei eKomi sind die einzelnen Abteilungen in der Regel zwischen 10 und 25 Mitarbeiter.
+Die meisten Mitarbeiter haben eine feste Arbeitszeit um unseren Kunden den Support zu garantieren.
+Aus diesem Grund wird jedem Mitarbeiter von dem zuständigen Teamlead eine feste Schicht zugeordnet.
+Innerhalb einer Abteilung gibt es Mitarbeiter mit vielen unterschiedlichen Sprachen, die basirend auf der Sprache bestimmte Schichten belegen müssen.
+Desweiteren muss der Schichtplaner anzeigen, wenn ein Mitarbeiter in Urlaub oder Krank ist.
 
 ####1.2. Projektziel
 
