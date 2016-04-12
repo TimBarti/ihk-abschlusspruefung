@@ -67,7 +67,7 @@ Das Produkt des Unternehmens ist es für Unternehmen unabhängig Bewertung aufgr
 Zu unsere Kunden zählen größtenteils Onlineshop, allerdings auch Banken und Versicherungen.
 Durch die unabhängig gesammelten Bewertungen, soll bei Neukunden Vertrauen für den Onlineshop geweckt werden.
 
-####1.1. Projektbeschreibung
+####1.1 Projektbeschreibung
 
 Bei eKomi sind die einzelnen Abteilungen in der Regel zwischen 10 und 25 Mitarbeiter.
 Die meisten Mitarbeiter haben eine feste Arbeitszeit um unseren Kunden den Support zu garantieren.
@@ -75,17 +75,21 @@ Aus diesem Grund wird jedem Mitarbeiter von dem zuständigen Teamlead eine feste
 Innerhalb einer Abteilung gibt es Mitarbeiter mit vielen unterschiedlichen Sprachen, die basirend auf der Sprache bestimmte Schichten belegen müssen.
 Desweiteren muss der Schichtplaner anzeigen, wenn ein Mitarbeiter in Urlaub oder Krank ist.
 
-####1.2. Projektziel
+####1.2 Projektziel
 
-- zielbeschreibung
+Ziel des Projektes ist es einen übersichtlichen und einfach zu benutzenden Online-Schichtplanner zu erstellen.
 
-####1.3. Projektumfeld
+Der Fokus liegt dabei zum einen auf das betrachten der bereits bestehenden Schichten.
+Welches bei großen Teams vorallem durch Filteroptionen gewährleistet werden soll.
+Zum anderen soll den Teamleads ein intuitives Interface zum erstellen, bearbeiten und löschen von Daten zur Verfügung gestellt werden.
+
+####1.3 Projektumfeld
 
 - von wem wird der schichtplaner genutzt
 - welcher anforderungen
 - jeder der fest schicht arbeitet
 - teamleads
 
-####1.4. Projektbegründung
+####1.4 Projektbegründung
 
 - spezifische probleme beschreiben
