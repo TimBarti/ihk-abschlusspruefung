@@ -37,7 +37,7 @@
 
 ### 5 Implementierungsphase
 
-##### 5.1 Iterationsplaung
+##### 5.1 Iterationsplanung
 ##### 5.2 Implementierung der Datenstrukturen
 ##### 5.3 Implementierung der Geschäftslogik
 ##### 5.4 Implementierung der Benutzeroberfläche
@@ -134,15 +134,28 @@ _Tabelle 1: Grobe Zeitplanung_
 
 ####2.2 Ressourcenplanung
 
-In _Anhang 2: Verwendete Ressourcen_ sind alle verwendeten Ressourcen ausführlich aufgelistet. Darunter zählen sowohl Hard-, Software und Personal.
-Aufgrund der Leidenschaft des Autors zu Open Source wurde nur Open Source Software verwendet.
+In _Anhang 2: Verwendete Ressourcen_ sind alle verwendeten Ressourcen ausführlich aufgelistet. Darunter zählen sowohl Hard-, Software als auch Personal.
+Aufgrund der Leidenschaft des Autors zu Open Source wurde größtenteils auf Open Source Software gesetzt.
 Das hatte auch den Vorteil das keine Lizenzkosten angefallen sind.
 
 ####2.3 Entwicklungsprozess
 
+Um möglichst häufig und frühzeitig Feedback zu erhalten, hat sich Autor für einen agilen Ansatz entschieden.
+Dabei soll am Ende jedes Tages ein kurzes Gespräch mit den Auftraggebern geführt werden, dadürch soll gewährleistet werden das etwaige Missverständnisse frühzeitig aufgedeckt und dementsprechend behoben werden können. Durch das rechtzeitige entdecken von falschen Entwicklungen, ist deren Wiedergutmachung günstiger als bei einer späteren Entdeckung.
+
+Desweiteren soll die Anwendung testgetrieben entwickelt werden. Test Driven Development führt in der Regel zu besserer Codequalität und einfacherer Erweiterbarkeit. Wenn der Code verbessert (refactoring) werden soll, kann deren Funktionalität durch die bestehenden Tests überprüft werden.
+
+Das ist vorallem wichtig das es sich bei diesem Projekt um eine minimal Lösung (minimum valuable product).
+Es ist geplant das das Produkt nach Abschluss der initialen Entwicklungsphase weiter entwickelt wird.
+
 ##3 Analysephase
 
 ####3.1 Ist-Analyse
+
+Wie bereits unter Punkt 1.4 beschrieben gibt es bereits ein bestehendes Produkt, welches jedoch __erhebliche__
+Schwächen in Punkto Benutzbarkeit und Bedienbarkeit hat. Das führt dazu das viele Mitarbeiter unnötig viel Zeit dafür aufwenden Ihre eigenen oder die Schichten von Kollegen herrauszufinden.
+Desweiteren ist das erstellen neuer Schichten und Personen umständlich, was auch zu ineffizienter Arbeit der Teamleads führt.
+
 ####3.2 Wirtschaftlichkeitsanalyse
 ####3.2.1 "Make or Buy"-Entscheidung
 ####3.2.2 Projektkosten
@@ -195,6 +208,7 @@ __Software:__
 - PostgreSQL 9.5
 - Docker
 - Bootstrap 3
+- Ansible
 - Jenkins
 
 __Personal:__
