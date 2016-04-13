@@ -157,6 +157,10 @@ Schwächen in Punkto Benutzbarkeit und Bedienbarkeit hat. Das führt dazu das vi
 Desweiteren ist das erstellen neuer Schichten und Personen umständlich, was auch zu ineffizienter Arbeit der Teamleads führt.
 
 ####3.2 Wirtschaftlichkeitsanalyse
+
+Durch die Probleme der bestehenden Lösung die in 1.4 und 3.1 ausführlich beschrieben wurden, würde eine Umsetzung die Arbeit aller Mitarbeiter die in Schichten arbeiten effizienter gestaltet werden.
+Ob die Umsetzung auch aus finanzieller Sicht zu rechtfertigen ist, soll in den folgenden Punkten untersucht werden.
+
 ####3.2.1 "Make or Buy"-Entscheidung
 ####3.2.2 Projektkosten
 ####3.2.3 Amortisationsdauer
