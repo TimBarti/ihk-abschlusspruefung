@@ -60,16 +60,16 @@
 Diese Projektdokumentation beschreibt den Ablauf des IHK-Abschlussprojektes, die der Autor
 während seiner Ausbildung zum Fachinformatiker - Anwendungsentwicklung abgeschlossen hat.
 
-Abgeschlossen wurde diese Ausbildung bei der Firma eKomi Limited in Berlin. Das Internet-Startup wurde
+Durchgeführt wurde die Ausbildung bei der Firma eKomi Limited in Berlin. Das Internet-Startup wurde
 2008 gegründet und beschäftigt im Moment ca. 300 Mitarbeiter.
 
-Das Produkt des Unternehmens ist es für Unternehmen unabhängig Bewertung aufgrund von Transaktionen zu sammeln.
+Das Produkt ist es für Unternehmen unabhängige transaktionsbasierte Bewertungen zu sammeln.
 Zu unsere Kunden zählen größtenteils Onlineshop, allerdings auch Banken und Versicherungen.
 Durch die unabhängig gesammelten Bewertungen, soll bei Neukunden Vertrauen für den Onlineshop geweckt werden.
 
 ####1.1 Projektbeschreibung
 
-Bei eKomi sind die einzelnen Abteilungen in der Regel zwischen 10 und 25 Mitarbeiter.
+Bei eKomi haben die einzelnen Abteilungen in der Regel zwischen 10 und 25 Mitarbeiter.
 Die meisten Mitarbeiter haben eine feste Arbeitszeit um unseren Kunden den Support zu garantieren.
 Aus diesem Grund wird jedem Mitarbeiter von dem zuständigen Teamlead eine feste Schicht zugeordnet.
 Innerhalb einer Abteilung gibt es Mitarbeiter mit vielen unterschiedlichen Sprachen, die basierend auf der Sprache bestimmte Schichten belegen müssen.
@@ -89,7 +89,7 @@ bearbeiten und neue Schichten und Personen anlegen.
 Ziel des Projektes ist es einen übersichtlichen und einfach zu benutzenden Online-Schichtplanner zu erstellen.
 
 Der Fokus liegt dabei zum einen auf das betrachten der bereits bestehenden Schichten.
-Welches bei großen Teams vorallem durch Filteroptionen gewährleistet werden soll.
+Welches bei großen Teams vorallem durch Filteroptionen vereinfacht werden soll.
 Zum anderen soll den Teamleads ein intuitives Interface zum erstellen, bearbeiten und löschen von Daten zur Verfügung gestellt werden.
 
 
