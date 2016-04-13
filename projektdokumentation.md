@@ -134,7 +134,9 @@ _Tabelle 1: Grobe Zeitplanung_
 
 ####2.2 Ressourcenplanung
 
-next
+In _Anhang 2: Verwendete Ressourcen_ sind alle verwendeten Ressourcen ausführlich aufgelistet. Darunter zählen sowohl Hard-, Software und Personal.
+Aufgrund der Leidenschaft des Autors zu Open Source wurde nur Open Source Software verwendet.
+Das hatte auch den Vorteil das keine Lizenzkosten angefallen sind.
 
 ####2.3 Entwicklungsprozess
 
@@ -159,7 +161,7 @@ __Analyse__ | __5__
 Ist-Analyse | 1
 Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse | 1
 Ermittlung von Use-Cases | 1
-Unterstützung bei der Erstellung des Lastenhefts | 1
+Unterstützung bei der Erstellung des Lastenhefts | 2
 __Entwurf__ | __10__
 Erstellung eines ER-Model | 1h
 Entwurf der API | 2h
@@ -173,3 +175,29 @@ Aufsetzen des Server | 2h
 Einrichtung des Coninuous Integration-Prozesses | 8h
 __Dokumentation__ | __10__
 Erstellen der Projektdokumentation | 10h
+
+####Anhang 2: Verwendete Ressourcen
+
+__Hardware:__
+
+- 1 PC, 2 Bildschirme, Maus, Tastatur
+
+__Software:__
+
+- Xubuntu 14.04
+- Sublime Text 3
+- Firefox
+- Rails 5.0
+- Angular 1
+- Git
+- Nginx
+- Passenger
+- PostgreSQL 9.5
+- Docker
+- Bootstrap 3
+- Jenkins
+
+__Personal:__
+
+- Entwickler - Umsetzung des Projektes
+- Teamlead von Customer Care - UI and UX Feedback
