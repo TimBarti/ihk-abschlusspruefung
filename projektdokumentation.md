@@ -162,6 +162,10 @@ Durch die Probleme der bestehenden Lösung die in 1.4 und 3.1 ausführlich besch
 Ob die Umsetzung auch aus finanzieller Sicht zu rechtfertigen ist, soll in den folgenden Punkten untersucht werden.
 
 ####3.2.1 "Make or Buy"-Entscheidung
+
+Aufgrund der unternehmensspezifischen Anforderung an den Schichtplanner, bezüglich Sprachen und Rollen jeweiliger Personen, befriedigt keine kostenlose Lösung auf dem Markt alle Bedürfnisse.
+Aus diesem Grund soll das Projekt intern entwickelt werden.
+
 ####3.2.2 Projektkosten
 ####3.2.3 Amortisationsdauer
 ####3.3 Nicht-monetäre Vorteile
