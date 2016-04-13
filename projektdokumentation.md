@@ -106,8 +106,6 @@ Um eine übersichtliche Ansicht zu gewährleisten soll pro Abteilung nur 1 Woche
 
 ####1.4 Projektbegründung
 
-
-
 Es gibt im Moment einen Schichtplaner, der auch intern entwickelt wurde. Allerdings weist dieser erhebliche Schwächen in der Benutzbarkeit und in der Übersichtlichkeit auf.
 
 Zum einen wird immer der gesamte Monat abgebildet, allerdings werden auf dem Bildschirm aus Platzgründen nur 2 Wochen angezeigt. Um die restlichen 2 Wochen zu sehen muss man nach rechts scrollen, wobei die Anzeige der Namen verschwindet. Das macht es sehr umständlich die Schichten für einen speziellen Mitarbeiter in den letzten 2 Wochen eines Monats herauszufinden.
@@ -116,3 +114,62 @@ Ein weiteres Problem ist das immer 3 Monate untereinander angezeigt werden, man 
 
 Desweiteren gibt es auch sonst keine Möglichkeit die Dargestellten Informationen zu filter, sollte man z.B. nur die Mitarbeiter mit einer bestimmten Sprache betrachten wollen, gäbe es keine Möglichkeit nur diese anzuzeigen.
 
+##2 Projektplanung
+
+####2.1 Projektphasen
+
+Zur Abschießung des Projektes stehen dem Autor 70 Stunden zur Verfügung. Zum Anfang des Projektes wurden verschiedene Projektphasen und deren geschätzte Dauer festgelegt.
+Dabei wurden 2 Unterteilungen vorgenommen, zum einen eine grobe Unterteilung, welche die Hauptphasen enthält.
+Diese wird in _Tabelle 1: Grobe Zeitplanung_ dargestellt. Diese können allerdings noch weiter detaillierter aufgelistet werden, indem man die Hauptphasen noch in Unterpunkte zerlegt. Diese detaillierte Tabelle ist im Anhang unter _A.1 Detaillierte Zeitplanung_ zu finden.
+
+Projektphase | geplante Zeit (in Stunden)
+-------------|--------------
+Analyse | 5
+Entwurf | 10
+Implementierung | 35
+Deployment | 10
+Dokumentation | 10
+
+_Tabelle 1: Grobe Zeitplanung_
+
+####2.2 Ressourcenplanung
+
+next
+
+####2.3 Entwicklungsprozess
+
+##3 Analysephase
+
+####3.1 Ist-Analyse
+####3.2 Wirtschaftlichkeitsanalyse
+####3.2.1 "Make or Buy"-Entscheidung
+####3.2.2 Projektkosten
+####3.2.3 Amortisationsdauer
+####3.3 Nicht-monetäre Vorteile
+####3.4 Anwendungsfälle
+####3.5 Lastenheft / Fachkonzept
+
+##Anhang:
+
+####Anhang 1: Detaillierte Zeitplanung
+
+Projektphase | geplante Zeit (in Stunden)
+-------------|--------------
+__Analyse__ | __5__
+Ist-Analyse | 1
+Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse | 1
+Ermittlung von Use-Cases | 1
+Unterstützung bei der Erstellung des Lastenhefts | 1
+__Entwurf__ | __10__
+Erstellung eines ER-Model | 1h
+Entwurf der API | 2h
+Markup für das Frontend | 3h
+Erstellung eines Pflichtenheftes | 4h
+__Implementierung__ | __35__
+Implementierung der API | 10h
+Implementierung des Frontends | 25h
+__Deployment__ | __10__
+Aufsetzen des Server | 2h
+Einrichtung des Coninuous Integration-Prozesses | 8h
+__Dokumentation__ | __10__
+Erstellen der Projektdokumentation | 10h
