@@ -92,8 +92,20 @@ Der Fokus liegt dabei zum einen auf das betrachten der bereits bestehenden Schic
 Welches bei großen Teams vorallem durch Filteroptionen vereinfacht werden soll.
 Zum anderen soll den Teamleads ein intuitives Interface zum erstellen, bearbeiten und löschen von Daten zur Verfügung gestellt werden.
 
+Aufgrund der Tatsache das in einem Team viele Mitarbeiter mit unterschiedlichen Sprachen sind und diese Sprachen
+ausschlaggebend für die Schichtplannung sind, muss der Schichtplanner neben der Person und den zugehörigen Schichten auch die Sprachen in welcher die Person Kunden betreut, dargestellt werden.
+Neben der Sprache soll jeder Person auch eine oder mehrere Rollen zugeordnet werden können, z.B. Teamlead, Support-Agent, Trainer etc.
+Desweiteren soll jedem Mitarbeiter auch ein Skill bzw. Aufgabenfeld zugeordnet werden können, z.B. 1st Level, 2nd Level oder bestimmte Programmiersprachen.
+
+Nach all diesen Kriterien soll gefiltert können. Hinzukommt das es möglich sein soll eine Person über den Namen zu finden.
+Ein Dropdownmenu soll es ermöglichen zwischen Abteilungen zu wechseln.
+
+Um eine übersichtliche Ansicht zu gewährleisten soll pro Abteilung nur 1 Woche werden, entsprechende Buttons sollen es ermöglichen die nächste bzw. vorherige Woche einzusehen.
+
 
 
 ####1.4 Projektbegründung
 
-- spezifische probleme beschreiben
+
+
+
