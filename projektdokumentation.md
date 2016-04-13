@@ -22,9 +22,8 @@
 ##### 3.2.1 "Make or Buy"-Entscheidung
 ##### 3.2.2 Projektkosten
 ##### 3.2.3 Amortisationsdauer
-##### 3.3 Nicht-monetäre Vorteile
-##### 3.4 Anwendungsfälle
-##### 3.5 Lastenheft / Fachkonzept
+##### 3.3 Anwendungsfälle
+##### 3.4 Lastenheft / Fachkonzept
 
 ### 4 Entwurfsphase
 
@@ -167,10 +166,27 @@ Aufgrund der unternehmensspezifischen Anforderung an den Schichtplanner, bezügl
 Aus diesem Grund soll das Projekt intern entwickelt werden.
 
 ####3.2.2 Projektkosten
+
+azubi gehalt 700 brutto im monat
+3h teamlead für feedback und lastenheft - 20€ pro stunde
+
 ####3.2.3 Amortisationsdauer
-####3.3 Nicht-monetäre Vorteile
-####3.4 Anwendungsfälle
-####3.5 Lastenheft / Fachkonzept
+
+2,5 min statt 5min schichtplanner pro tag
+60% belegtschaft nutzen schichtplanner
+durchschnittsgehalt 15€ pro stunde
+
+####3.3 Anwendungsfälle
+####3.4 Lastenheft / Fachkonzept
+
+##4 Entwurfsphase
+
+####4.1 Zielplattform
+####4.2 Architekturdesign
+####4.3 Entwurf der Benutzeroberfläche
+####4.4 Datenmodell
+####4.5 Geschäftslogik
+####4.6 Pflichtenheft
 
 ##Anhang:
 
