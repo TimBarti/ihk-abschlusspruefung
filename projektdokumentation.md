@@ -248,7 +248,19 @@ Um die Daten permanent zu speichern wurde PostgreSQL als ORDBMS gewählt.
 
 ####4.2 Architekturdesign
 
+Im Backend kommt wie bereits erwähnt Ruby on Rails zum Einsatz. Da mit Rails 5 der API Gem integriert wurde und wir Rails nur als API benutzen wollen, wurde Rails 5 gewählt, obwohl es zur Zeit der Entwicklung noch in der Beta war.
+Der API-Mode führt dazu das viele unnötige Komponenten schon bei erstellen der App weggelassen werden, was zu einer wesentlich schlankeren Application führt.
 
+Ruby on Rails ist folgt dem Model-View-Controller Pattern. In diesem Fall ist ein Teil der Funktionalität in das Frontend ausgelagert, wodurch Rails lediglich für das das auslesen der Daten aus der Datenbank und deren Auslieferung, bzw. Empfang als JSON, die Authentifizierung und Authorisierung zuständig ist.
+
+AngularJS folgt nach eigener Aussage Model-View-Whatever Pattern, es ist also im groben an MVC angelehnt.
+Desweiteren wird das two-way-databinding Pattern implementiert, was dazu führt das Daten die im Frontend geändert werden, automatisch an das Backend kommuniziert werden. Dieses Feature zusammen mit einer high-level-abstraction für AJAX-Calls führt dazu das es wesentlich einfacher ist eine dynamische Webapp zu bauen wo sich viele Daten ändern können.
+
+Da genau bekannt ist, in welcher Form die Daten gespeichert werden sollen, hat sich der Autor für eine Relationelle Datenbank entschieden.
+Da wir die Informationen als JSON verschicken, wurde ein Datenbankmanagementsystem gesucht, welches den Datentyp JSON direkt unterstützt.
+Die Wahl ist auf PostgreSQL gefallen.
+
+Da für die Hauptansicht 6 verschiedene Tabellen abgefragt werden müssen, wird dafür auf das ORM (Active Record) von Rails verzichtet und auf Postgres spezifisches SQL gesetzt, siehe _Anhang 4: Main Query_.
 
 ####4.3 Entwurf der Benutzeroberfläche
 ####4.4 Datenmodell
@@ -316,3 +328,58 @@ Anforderungen:
 - b
 - c
 - d
+
+####Anhang 4: Main Query
+
+__improve variable names__
+
+```sql
+SELECT array_to_json(array_agg(row_to_json(persons))) as people_in_dept
+      FROM (SELECT p.id,
+                   p.name,
+                   json_agg(DISTINCT(pr)) as roles,
+                   json_agg(DISTINCT(ps)) as skills,
+                   json_agg(DISTINCT(lp)) as languages,
+                   json_agg(DISTINCT(x)) as shifts
+                   FROM people p
+     CROSS JOIN LATERAL (SELECT d.date_of_shift,
+                                sh.id,
+                                sh.name,
+                                sh.shift_type_id
+                           FROM generate_series('2016-03-07'::date, '2016-03-11', interval '1 day') AS d(date_of_shift)
+              LEFT JOIN LATERAL (SELECT shifts.id, shifts.person_id, shifts.date_of_shift, shifts.shift_type_id, shift_types.name
+                                   FROM shifts
+                                   JOIN shift_types
+                                     ON shift_types.id = shifts.shift_type_id
+                                ) as sh
+                             ON sh.date_of_shift = d.date_of_shift AND
+                                sh.person_id = p.id
+                   ) as x
+ LEFT JOIN LATERAL (     SELECT sk.id,
+                                s.person_id,
+                                sk.name
+                           FROM people_skills as s
+                      LEFT JOIN skills as sk
+                          ON sk.id = s.skill_id
+                    ) as ps
+                ON ps.person_id = p.id
+ LEFT JOIN LATERAL (     SELECT r.name,
+                                r.id,
+                                pero.person_id
+                           FROM roles as r
+                      LEFT JOIN people_roles as pero
+                             ON pero.role_id = r.id
+                   ) as pr
+                ON pr.person_id = p.id
+ LEFT JOIN LATERAL (     SELECT l.name,
+                                l.id,
+                                lape.person_id
+                           FROM languages as l
+                      LEFT JOIN languages_people as lape
+                             ON lape.language_id = l.id
+                   ) as lp
+                ON lp.person_id = p.id
+             WHERE p.department_id = 43
+             GROUP BY p.id)
+   AS persons
+```
