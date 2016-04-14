@@ -229,6 +229,10 @@ kommt später
 
 ####3.4 Lastenheft / Fachkonzept
 
+Am Ende der Analysephase wurde zusammen mit dem Teamlead vom Customer Care ein Lastenheft erstellt, welches alle
+Anforderungen des Auftraggebers an die ANwendung zusammenfasst.
+Einen Auschschnitt aus dem Lastenheft ist im _Anhang 3: Auszug des Lastenheftes_ zu finden.
+
 ##4 Entwurfsphase
 
 ####4.1 Zielplattform
@@ -289,3 +293,13 @@ __Personal:__
 
 - Entwickler - Umsetzung des Projektes
 - Teamlead von Customer Care - UI and UX Feedback
+
+####Anhang 3: Auszug des Lastenheftes
+
+auszug lastenheft
+
+Anforderungen:
+- a
+- b
+- c
+- d
