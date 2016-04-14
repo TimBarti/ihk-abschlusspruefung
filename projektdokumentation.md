@@ -268,13 +268,46 @@ Da für die Hauptansicht müssen 6 verschiedene Tabellen abgefragt werden, wird 
 Der wichtigste Teil der Benutzeroberfläche ist, die Ansicht die alle Personen einer Abteilung und ihre zugehörigen Schichten in einer spezifischen Woche darstellt. Um eine bestimmte Person oder Personengruppe schnell zu finden, sollen detaillierte Filteroptionen zur Verfügung gestellt werden. Damit die Filteroptionen mit wachsender Anzahl von Kriterien nicht unübersichtlich werden, sollen die möglichen Kriterien nach Kategorie in einem Dropdownmenu gruppiert werden. Das heißt es wird die Möglichkeit geben ein andere Abteilung anzuzeigen, nach Role, Skill, Sprache und Schicht per Checkbox zu filtern und eine bestimmte Person über ihren Namen zu suchen.
 Alle Personen ihre Attribute und Schichten werden in einer Tabelle dargestellt. Und es gibt natürlich noch die Möglichkeit die nächste bzw. vorherige Woche anzuzeigen. Innerhalb dieser Ansicht können lediglich die bestehenden Schichten geändert und neue zugewiesen werden.
 
-Alle weiteren Aktionen, wie zum Beispiel das erstellen neuer Rollen, Person etc, sind in extra Seiten ausgelagert um die Tabelle nicht mit Funktionen zu überladen.
+Alle weiteren Aktionen, wie zum Beispiel das erstellen, bearbeiten und löschen von Rollen, Person etc, sind in extra Seiten ausgelagert um die Tabelle nicht mit Funktionen zu überladen.
 
 Die Mockups wurden dabei mit Stift und Papier angefertigt, siehe _Anhang 5: GUI Mockup_, und mit dem Auftraggeber abgesprochen.
 
 ####4.4 Datenmodell
+
+Um notwendigen Datentypen zu erabeiten wurde der bestehende Schichtplanner analysiert. Dadurch wurden folgende Einheiten herausgearbeitet:
+
+- Abteilung
+- Person
+- Schicht
+- Schichttype
+- Rolle
+- Sprache
+- Fähigkeit
+
+Die Beziehungen zwischen den einzelnen Einheiten ist im _Anhang 6: ER-Model_ dargestellt.
+
 ####4.5 Geschäftslogik
 ####4.6 Pflichtenheft
+
+##5 Implementierungsphase
+
+####5.1 Iterationsplanung
+####5.2 Implementierung der Datenstrukturen
+####5.3 Implementierung der Geschäftslogik
+####5.4 Implementierung der Benutzeroberfläche
+
+##6 Abnahme- und Einführungsphase
+
+####6.1 Abnahme durch den Fachbereich
+####6.2 Deployment und Einführung
+
+##7 Dokumentation
+
+##8 Fazit
+
+####8.1 Soll-/Ist-Vergleich
+####8.2 Lessons Learned
+####8.3 Ausblick
 
 ##Anhang:
 
@@ -395,5 +428,9 @@ SELECT array_to_json(array_agg(row_to_json(persons))) as people_in_dept
 ```
 
 ####Anhang 5: GUI Mockup
+
+todo
+
+####Anhang 6: ER-Model
 
 todo

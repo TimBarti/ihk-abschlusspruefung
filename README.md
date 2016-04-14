@@ -59,4 +59,5 @@
 - [ ] Anhang 3: Auszug des Lastenheftes
 - [x] Anhang 4: Main Query
 - [ ] Anhang 5: GUI Mockup
+- [ ] Anhang 6: ER-Model
 
