@@ -170,6 +170,21 @@ Aus diesem Grund soll das Projekt intern entwickelt werden.
 azubi gehalt 700 brutto im monat
 3h teamlead für feedback und lastenheft - 20€ pro stunde
 
+Die Kosten die während der Umsetzung des Projektes anfallen würden, sollen berechnet werden.
+Da bei der Software auf Open Source gesetzt wurde fallen keine Kosten für Lizenzen an.
+Die anstehenden Ausgaben entstehen nur in Form von Arbeitszeit von internen Mitarbeitern.
+Dabei wird für den Auszubildenen ein Stundensatz von 5€ festgelegt und für einen fest angestellten
+Teamlead 25€.
+
+Die gesamten Projektkosten und deren Zusammensetzung können der _Tabelle 2: Kostenaufstellung entnommen werden.
+
+Vorgang | Mitarbeiter | Zeit (in Sunden) | Kosten
+--------|-------------|------------------|-------
+Entwicklungskosten | 1 Auszubildender | 70 | 350
+Erstellung des Lastenheftes | 1 Teamlead | 2 | 50
+tägliches Feedback | 1 Teamlead | 3 | 75
+__Projektkosten gesamt:__ | | | __475__
+
 ####3.2.3 Amortisationsdauer
 
 2,5 min statt 5min schichtplanner pro tag
