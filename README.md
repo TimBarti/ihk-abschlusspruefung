@@ -25,7 +25,7 @@
 
 ### 4 Entwurfsphase
 
-- [ ]  4.1 Zielplattform
+- [x]  4.1 Zielplattform
 - [ ]  4.2 Architekturdesign
 - [ ]  4.3 Entwurf der Benutzeroberfläche
 - [ ]  4.4 Datenmodell

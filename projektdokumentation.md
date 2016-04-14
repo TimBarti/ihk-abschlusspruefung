@@ -236,7 +236,20 @@ Einen Auschschnitt aus dem Lastenheft ist im _Anhang 3: Auszug des Lastenheftes_
 ##4 Entwurfsphase
 
 ####4.1 Zielplattform
+
+Vom Auftraggeber gab es keine Beschränkung welche Programmiersprache verwendet werden soll.
+Es sollte lediglich ein webbasierter Schichtplanner sein.
+
+Aus diesem Grund hat sich der Autor für Software entschieden die seinen persönlichen Vorlieben entspricht.
+Als Programmiersprache wurde Ruby gewählt, was zur Wahl von Ruby on Rails als Webframework führte.
+Da ein Schichtplanner sehr dynamisch ist und viel Javascript erfordert, hat sich der Autor für ein dediziertes Javascript-Frontend-Framework entschieden. Im speziellen wurde AngularJS ausgewählt.
+Da die Darstellung der Daten AngularJS obliegt, wird Ruby on Rails als JSON-API betrieben.
+Um die Daten permanent zu speichern wurde PostgreSQL als ORDBMS gewählt.
+
 ####4.2 Architekturdesign
+
+
+
 ####4.3 Entwurf der Benutzeroberfläche
 ####4.4 Datenmodell
 ####4.5 Geschäftslogik
@@ -250,22 +263,22 @@ Projektphase | geplante Zeit (in Stunden)
 -------------|--------------
 __Analyse__ | __5__
 Ist-Analyse | 1
-Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung Analyse | 1
+Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung | 1
 Ermittlung von Use-Cases | 1
 Unterstützung bei der Erstellung des Lastenhefts | 2
 __Entwurf__ | __10__
-Erstellung eines ER-Model | 1h
-Entwurf der API | 2h
-Markup für das Frontend | 3h
-Erstellung eines Pflichtenheftes | 4h
+Erstellung eines ER-Model | 1
+Entwurf der API | 2
+Markup für das Frontend | 3
+Erstellung eines Pflichtenheftes | 4
 __Implementierung__ | __35__
-Implementierung der API | 10h
-Implementierung des Frontends | 25h
+Implementierung der API | 10
+Implementierung des Frontends | 25
 __Deployment__ | __10__
-Aufsetzen des Server | 2h
-Einrichtung des Coninuous Integration-Prozesses | 8h
+Aufsetzen des Server | 2
+Einrichtung des Coninuous Integration-Prozesses | 8
 __Dokumentation__ | __10__
-Erstellen der Projektdokumentation | 10h
+Erstellen der Projektdokumentation | 10
 
 ####Anhang 2: Verwendete Ressourcen
 
