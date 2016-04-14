@@ -51,3 +51,9 @@
 - [ ]  8.1 Soll-/Ist-Vergleich
 - [ ]  8.2 Lessons Learned
 - [ ]  8.3 Ausblick
+
+##Anhang:
+
+- [x]Anhang 1: Detaillierte Zeitplanung
+- [x]Anhang 2: Verwendete Ressourcen
+- [ ]Anhang 3: Auszug des Lastenheftes
