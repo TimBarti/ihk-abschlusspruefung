@@ -175,7 +175,7 @@ Teamlead 25€.
 
 Die gesamten Projektkosten und deren Zusammensetzung können der _Tabelle 2: Kostenaufstellung entnommen werden.
 
-Vorgang | Mitarbeiter | Zeit (in Sunden) | Kosten
+Vorgang | Mitarbeiter | Zeit (in Stunden) | Kosten (in €)
 --------|-------------|------------------|-------
 Entwicklungskosten | 1 Auszubildender | 70 | 350
 Erstellung des Lastenheftes | 1 Teamlead | 2 | 50
@@ -198,9 +198,35 @@ herrausfinden einer Schicht | 4200 | 2 min | 1 min | 35 h
 Administration des Schichtplanners | 200 | 5 min | 4 min | 3 h 20 min
 __Zeiteinsparung gesamt pro Monat:__ | | | | __38 h 20 min__
 
+__Berechnung der Amortisationsdauer:__
 
+_Anzahl der Aufrufe pro Monat:_
+
+Von 300 Mitarbeitern benutzen 70% den Schichtplanner täglich. Das sind __210__ Mitarbeiter. Bei 20 Arbeitstagen pro Monat resultiert das in
+__4200__ Aufrufen pro Monat.
+
+_Ersparnis durch schnelleren Zugriff auf bestehende Schichten:_
+
+Wie bereits in der Tabelle ersichtlich ergibt sich dadurch im Monat eine Zeitersparnis von __35 Stunden!__
+Wenn wir von einem durchschnittlichen Stundenlohn von 15€ ausgehen ergibt das bereits im ersten Monat eine Einsparung von __525 €!__
+
+_Ersparnis durch vereinfachte Administartion des Schichtplanners:_
+
+Wir gehen davon aus das ein Teamlead im Schnitt 5 Minuten am Tag für die Administration des Schichtplanners aufbringen muss.
+Bei 10 verschiedenen Abteilungen beläuft sich das auf 200 (10 Zugriffe pro Tag x 20 Tage) Vorgänge im Monat.
+Bei der Administation gab es weniger potenzial den Workflow zu verbessern, aus diesem Grund ist der Vorgang nur 20% schneller.
+Was trotzdem jeden Tag 1 Minute Zeit einspart. Bei Teamleads gehen wir von einem durchschnittlichen Stundenlohn von 25 € aus.
+Das würde bedeuten das weitere __83,33 €__ (3 1/3 h x 25 € / h) pro Monat gespart werden können.
+
+Das bedeutet das wir pro Monat __608,33 €__ sparen! Das sind 30,42 € pro Tag.
+Bei Projektkosten von lediglich 475 € bedeutet das, das sich das Projekt bereits nach __16 Arbeitstagen__ amortisiert hat!
+
+Aus diesem Grund kann das Projekt aus wirtschaftlichen Gesichtspunten als sehr lukrativ eingestuft werden.
 
 ####3.3 Anwendungsfälle
+
+kommt später
+
 ####3.4 Lastenheft / Fachkonzept
 
 ##4 Entwurfsphase
