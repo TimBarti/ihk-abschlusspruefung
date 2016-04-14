@@ -21,12 +21,12 @@
 - [x]  3.2.2 Projektkosten
 - [x]  3.2.3 Amortisationsdauer
 - [ ]  3.3 Anwendungsfälle
-- [ ]  3.4 Lastenheft / Fachkonzept
+- [x]  3.4 Lastenheft / Fachkonzept
 
 ### 4 Entwurfsphase
 
 - [x]  4.1 Zielplattform
-- [ ]  4.2 Architekturdesign
+- [x]  4.2 Architekturdesign
 - [ ]  4.3 Entwurf der Benutzeroberfläche
 - [ ]  4.4 Datenmodell
 - [ ]  4.5 Geschäftslogik
@@ -54,6 +54,9 @@
 
 ##Anhang:
 
-- [x]Anhang 1: Detaillierte Zeitplanung
-- [x]Anhang 2: Verwendete Ressourcen
-- [ ]Anhang 3: Auszug des Lastenheftes
+- [x] Anhang 1: Detaillierte Zeitplanung
+- [x] Anhang 2: Verwendete Ressourcen
+- [ ] Anhang 3: Auszug des Lastenheftes
+- [x] Anhang 4: Main Query
+- [ ] Anhang 5: GUI Mockup
+
