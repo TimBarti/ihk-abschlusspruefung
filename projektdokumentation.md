@@ -167,9 +167,6 @@ Aus diesem Grund soll das Projekt intern entwickelt werden.
 
 ####3.2.2 Projektkosten
 
-azubi gehalt 700 brutto im monat
-3h teamlead für feedback und lastenheft - 20€ pro stunde
-
 Die Kosten die während der Umsetzung des Projektes anfallen würden, sollen berechnet werden.
 Da bei der Software auf Open Source gesetzt wurde fallen keine Kosten für Lizenzen an.
 Die anstehenden Ausgaben entstehen nur in Form von Arbeitszeit von internen Mitarbeitern.
@@ -187,9 +184,21 @@ __Projektkosten gesamt:__ | | | __475__
 
 ####3.2.3 Amortisationsdauer
 
-2,5 min statt 5min schichtplanner pro tag
-60% belegtschaft nutzen schichtplanner
-durchschnittsgehalt 15€ pro stunde
+Folgend soll berechnet werden, wie lange es dauern wird bis sich die Ausgaben amortisieren und ab wann das Produkt Gewinn für das Unternehmen erwirtschaftet.
+
+Der primäre Vorteil des Produktes liegt in der verbesserten Bedienbarkeit, welche dazu führt das weniger Zeit notwendig ist um bestimmte Aktionen durchzuführen.
+
+Eine kleine Umfrage hat ergeben das ungefähr 70% der Mitarbeiter in festen Schichten arbeiten und dementsprechend den Schichtplaner jeden Tag nutzen. Desweiteren hat die Umfrage ergeben das der alte Schichtplanner im Schnitt jeden Tag für 2 Minuten benutzt wird.
+Durch die massiv verbesserte Übersichtlichkeit wird davon ausgegangen, das das betrachten von Schichten einer bestimmten Person um 50% schneller ist.
+Das administieren der Schichten durch den Teamlead soll 20% schneller gehen.
+
+Vorgang | Anzahl _pro Monat_ | Zeit (alt) _pro Vorgang_ | Zeit (neu) _pro Vorgang_ | Einsparung
+--------|--------|------------|------------|-----------
+herrausfinden einer Schicht | 4200 | 2 min | 1 min | 35 h
+Administration des Schichtplanners | 200 | 5 min | 4 min | 3 h 20 min
+__Zeiteinsparung gesamt pro Monat:__ | | | | __38 h 20 min__
+
+
 
 ####3.3 Anwendungsfälle
 ####3.4 Lastenheft / Fachkonzept
