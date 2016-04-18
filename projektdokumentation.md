@@ -62,7 +62,7 @@ während seiner Ausbildung zum Fachinformatiker - Anwendungsentwicklung abgeschl
 Durchgeführt wurde die Ausbildung bei der Firma eKomi Limited in Berlin. Das Internet-Startup wurde
 2008 gegründet und beschäftigt im Moment ca. 300 Mitarbeiter.
 
-Das Produkt ist es für Unternehmen unabhängige transaktionsbasierte Bewertungen zu sammeln.
+Das Produkt ist es für Unternehmen unabhängige, transaktionsbasierte Bewertungen zu sammeln.
 Zu unsere Kunden zählen größtenteils Onlineshop, allerdings auch Banken und Versicherungen.
 Durch die unabhängig gesammelten Bewertungen, soll bei Neukunden Vertrauen für den Onlineshop geweckt werden.
 
@@ -111,7 +111,7 @@ Zum einen wird immer der gesamte Monat abgebildet, allerdings werden auf dem Bil
 
 Ein weiteres Problem ist das immer 3 Monate untereinander angezeigt werden, man muss sowohl horizontal als auch vertikal scrollen um alle Informationen zu erfassen und es gibt keine Möglichkeit die Ansicht auf einen bestimmten Zeitrahmen festzulegen.
 
-Desweiteren gibt es auch sonst keine Möglichkeit die Dargestellten Informationen zu filter, sollte man z.B. nur die Mitarbeiter mit einer bestimmten Sprache betrachten wollen, gäbe es keine Möglichkeit nur diese anzuzeigen.
+Desweiteren gibt es auch sonst keine Möglichkeit die dargestellten Informationen zu filtern, sollte man z.B. nur die Mitarbeiter mit einer bestimmten Sprache betrachten wollen, gäbe es keine Möglichkeit nur diese anzuzeigen.
 
 ##2 Projektplanung
 
@@ -119,7 +119,7 @@ Desweiteren gibt es auch sonst keine Möglichkeit die Dargestellten Informatione
 
 Zur Abschießung des Projektes stehen dem Autor 70 Stunden zur Verfügung. Zum Anfang des Projektes wurden verschiedene Projektphasen und deren geschätzte Dauer festgelegt.
 Dabei wurden 2 Unterteilungen vorgenommen, zum einen eine grobe Unterteilung, welche die Hauptphasen enthält.
-Diese wird in _Tabelle 1: Grobe Zeitplanung_ dargestellt. Diese können allerdings noch weiter detaillierter aufgelistet werden, indem man die Hauptphasen noch in Unterpunkte zerlegt. Diese detaillierte Tabelle ist im Anhang unter _A.1 Detaillierte Zeitplanung_ zu finden.
+Diese wird in _Tabelle 1: Grobe Zeitplanung_ dargestellt. Diese können allerdings noch weiter aufgeteilt werden, indem man die Hauptphasen noch in Unterpunkte zerlegt. Diese ausführliche Tabelle ist im Anhang unter _A.1 Detaillierte Zeitplanung_ zu finden.
 
 Projektphase | geplante Zeit (in Stunden)
 -------------|--------------
@@ -133,7 +133,7 @@ _Tabelle 1: Grobe Zeitplanung_
 
 ####2.2 Ressourcenplanung
 
-In _Anhang 2: Verwendete Ressourcen_ sind alle verwendeten Ressourcen ausführlich aufgelistet. Darunter zählen sowohl Hard-, Software als auch Personal.
+In _Anhang 2: Verwendete Ressourcen_ sind alle verwendeten Ressourcen aufgelistet. Darunter zählen sowohl Hard-, Software als auch Personal.
 Aufgrund der Leidenschaft des Autors zu Open Source wurde größtenteils auf Open Source Software gesetzt.
 Das hatte auch den Vorteil das keine Lizenzkosten angefallen sind.
 
@@ -152,7 +152,7 @@ Es ist geplant das das Produkt nach Abschluss der initialen Entwicklungsphase we
 ####3.1 Ist-Analyse
 
 Wie bereits unter Punkt 1.4 beschrieben gibt es bereits ein bestehendes Produkt, welches jedoch __erhebliche__
-Schwächen in Punkto Benutzbarkeit und Bedienbarkeit hat. Das führt dazu das viele Mitarbeiter unnötig viel Zeit dafür aufwenden Ihre eigenen oder die Schichten von Kollegen herrauszufinden.
+Schwächen in Punkto Benutzbarkeit und Bedienbarkeit hat. Das führt dazu das viele Mitarbeiter unnötig viel Zeit dafür aufwenden ihre eigenen oder die Schichten von Kollegen herrauszufinden.
 Desweiteren ist das erstellen neuer Schichten und Personen umständlich, was auch zu ineffizienter Arbeit der Teamleads führt.
 
 ####3.2 Wirtschaftlichkeitsanalyse
@@ -184,7 +184,7 @@ __Projektkosten gesamt:__ | | | __475__
 
 ####3.2.3 Amortisationsdauer
 
-Folgend soll berechnet werden, wie lange es dauern wird bis sich die Ausgaben amortisieren und ab wann das Produkt Gewinn für das Unternehmen erwirtschaftet.
+Folgend soll berechnet werden, wie lange es dauern wird bis sich die Ausgaben amortisiert haben und ab wann das Produkt Gewinn für das Unternehmen erwirtschaftet.
 
 Der primäre Vorteil des Produktes liegt in der verbesserten Bedienbarkeit, welche dazu führt das weniger Zeit notwendig ist um bestimmte Aktionen durchzuführen.
 
@@ -214,7 +214,7 @@ _Ersparnis durch vereinfachte Administartion des Schichtplanners:_
 
 Wir gehen davon aus das ein Teamlead im Schnitt 5 Minuten am Tag für die Administration des Schichtplanners aufbringen muss.
 Bei 10 verschiedenen Abteilungen beläuft sich das auf 200 (10 Zugriffe pro Tag x 20 Tage) Vorgänge im Monat.
-Bei der Administation gab es weniger potenzial den Workflow zu verbessern, aus diesem Grund ist der Vorgang nur 20% schneller.
+Bei der Administration gab es weniger potenzial den Workflow zu verbessern, aus diesem Grund ist der Vorgang nur 20% schneller.
 Was trotzdem jeden Tag 1 Minute Zeit einspart. Bei Teamleads gehen wir von einem durchschnittlichen Stundenlohn von 25 € aus.
 Das würde bedeuten das weitere __83,33 €__ (3 1/3 h x 25 € / h) pro Monat gespart werden können.
 
@@ -249,24 +249,24 @@ Um die Daten permanent zu speichern wurde PostgreSQL als ORDBMS gewählt.
 ####4.2 Architekturdesign
 
 Im Backend kommt wie bereits erwähnt Ruby on Rails zum Einsatz. Da mit Rails 5 der API Gem integriert wurde und wir Rails nur als API benutzen wollen, wurde Rails 5 gewählt, obwohl es zur Zeit der Entwicklung noch in der Beta war.
-Der API-Mode führt dazu das viele unnötige Komponenten schon bei erstellen der App weggelassen werden, was zu einer wesentlich schlankeren Application führt.
+Der API-Mode führt dazu das viele unnötige Komponenten schon bei erstellen der App weggelassen werden, was zu einer wesentlich schlankeren Anwendung führt.
 
-Ruby on Rails ist folgt dem Model-View-Controller Pattern. In diesem Fall ist ein Teil der Funktionalität in das Frontend ausgelagert, wodurch Rails lediglich für das das auslesen der Daten aus der Datenbank und deren Auslieferung, bzw. Empfang als JSON, die Authentifizierung und Authorisierung zuständig ist.
+Ruby on Rails folgt dem Model-View-Controller Pattern. In diesem Fall ist ein Teil der Funktionalität in das Frontend (AngularJS) ausgelagert, wodurch Rails lediglich für das das auslesen der Daten aus der Datenbank und deren Auslieferung, bzw. Empfang als JSON, die Authentifizierung und Authorisierung zuständig ist.
 
-AngularJS folgt nach eigener Aussage Model-View-Whatever Pattern, es ist also im groben an MVC angelehnt.
-Desweiteren wird das two-way-databinding Pattern implementiert, was dazu führt das Daten die im Frontend geändert werden, automatisch an das Backend kommuniziert werden. Dieses Feature zusammen mit einer high-level-abstraction für AJAX-Calls führt dazu das es wesentlich einfacher ist eine dynamische Webapp zu bauen wo sich viele Daten ändern können.
+AngularJS folgt nach eigener Aussage dem Model-View-Whatever Pattern, es ist also im groben an MVC angelehnt.
+Desweiteren wird das two-way-databinding Pattern implementiert, was dazu führt das Daten die im Frontend geändert werden, automatisch an das Backend kommuniziert werden. Dieses Feature zusammen mit einer high-level-abstraction für AJAX-Calls führt dazu das es wesentlich einfacher ist eine dynamische Webapp zu bauen, wo sich viele Daten ändern können.
 Die Hauptaufgabe von Angular ist es die Informationen, die als JSON übermittelt wurden, ansprechend darzustellen und zu filtern.
 
 Da genau bekannt ist, in welcher Form die Daten gespeichert werden sollen, hat sich der Autor für eine Relationelle Datenbank entschieden.
-Da wir die Informationen als JSON verschicken, wurde ein Datenbankmanagementsystem gesucht, welches den Datentyp JSON direkt unterstützt.
-Die Wahl ist auf PostgreSQL gefallen.
+Da wir die Informationen als JSON verschicken, wurde ein Datenbankmanagementsystem gesucht, welches den Datentyp JSON nativ unterstützt.
+Aufgrund diese Kriterien ist die Wahl ist auf PostgreSQL gefallen.
 
-Da für die Hauptansicht müssen 6 verschiedene Tabellen abgefragt werden, wird dafür auf das ORM (Active Record) von Rails verzichtet und auf Postgres spezifisches SQL gesetzt, siehe _Anhang 4: Main Query_.
+Da für die Hauptansicht 6 verschiedene Tabellen abgefragt werden, wird dafür auf das ORM (Active Record) von Rails verzichtet und auf Postgres spezifisches SQL gesetzt, siehe _Anhang 4: Main Query_.
 
 ####4.3 Entwurf der Benutzeroberfläche
 
 Der wichtigste Teil der Benutzeroberfläche ist, die Ansicht die alle Personen einer Abteilung und ihre zugehörigen Schichten in einer spezifischen Woche darstellt. Um eine bestimmte Person oder Personengruppe schnell zu finden, sollen detaillierte Filteroptionen zur Verfügung gestellt werden. Damit die Filteroptionen mit wachsender Anzahl von Kriterien nicht unübersichtlich werden, sollen die möglichen Kriterien nach Kategorie in einem Dropdownmenu gruppiert werden. Das heißt es wird die Möglichkeit geben ein andere Abteilung anzuzeigen, nach Role, Skill, Sprache und Schicht per Checkbox zu filtern und eine bestimmte Person über ihren Namen zu suchen.
-Alle Personen ihre Attribute und Schichten werden in einer Tabelle dargestellt. Und es gibt natürlich noch die Möglichkeit die nächste bzw. vorherige Woche anzuzeigen. Innerhalb dieser Ansicht können lediglich die bestehenden Schichten geändert und neue zugewiesen werden.
+Alle Personen ihre Attribute und Schichten werden in einer Tabelle dargestellt. Desweiteren gibt es natürlich die Möglichkeit die nächste bzw. vorherige Woche anzuzeigen. Innerhalb dieser Ansicht können lediglich die bestehenden Schichten geändert und neue zugewiesen werden.
 
 Alle weiteren Aktionen, wie zum Beispiel das erstellen, bearbeiten und löschen von Rollen, Person etc, sind in extra Seiten ausgelagert um die Tabelle nicht mit Funktionen zu überladen.
 
