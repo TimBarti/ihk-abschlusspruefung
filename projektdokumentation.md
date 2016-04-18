@@ -334,10 +334,16 @@ end
 
 ```
 
-Dieser Code wird von ActiveRecord in das SQL für die jeweilige Datenbank übersetzt, in unserem Fall PostgreSQL. Diese Form der Datenbankerstellung hat den Vorteil das wir immer eine Primärschlüssel haben der `id` heißt und sich automatisch erhöht, desweiteren haben wir immer die Felder created_at und updated_at die autmatisch von Rails verwaltet werden.
+Nach ausführen von `rails db:migrate` wird dieser Code von ActiveRecord in das SQL für die jeweilige Datenbank übersetzt, in unserem Fall PostgreSQL, und ausgeführt. Diese Form der Datenbankerstellung hat den Vorteil das wir immer eine Primärschlüssel haben der `id` heißt und sich automatisch erhöht, desweiteren haben wir immer die Felder created_at und updated_at die autmatisch von Rails verwaltet werden.
 
 ####5.3 Implementierung der Geschäftslogik
+
+
+
 ####5.4 Implementierung der Benutzeroberfläche
+
+Die GUI wurde auf Basis der angefertigten Mockups implmenetiert. Um einen konsequentes Aussehen und eine einfache Umsetzung zu gewährleisten wurde dabei auf Bootstrap als CSS-Framework gesetzt. Dieses bietet uns dank Grid eine einfach Möglichkeit unsere Objekte zu organisieren. Desweiteren gibt es fertige Lösungen für Dropdownmenus, Modals oder Akkordions. Komponenten die Javascript benötigen, setzen allerdings alle jQuery voraus. Da AngularJS mit einer abgespeckten Version von jQuery, namens jqLite, daherkommt, möchten wir auf jQuery verzichten. Aus diesem Grund greifen wir auf angular-bootstrap zurück.
+In dieser vom Angular Team gepflegten Bibliothek wurden alle Bootstrapkomponenten die Javascript benötigen in Angular neu geschrieben.
 
 ##6 Abnahme- und Einführungsphase
 
@@ -535,9 +541,7 @@ todo
       null
     ]
   },
-  .
-  .
-  .
+  { }
 ]
 ```
 
