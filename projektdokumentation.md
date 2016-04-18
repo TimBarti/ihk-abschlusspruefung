@@ -310,7 +310,7 @@ Dieses legt die Umsetzung des Projektes fest. Einen Auszug davon befindet sich i
 
 ####5.1 Iterationsplanung
 
-
+Am Anfang der Implementierungsphase wurde ein Iterationsplan erstellt. Dieser legt die einzelnen Iterationen fest. Am Ende jeder Iteration wird der aktuelle Stand dem Auftraggeber vorgestellt. Der Interationsplan befindet sich im _Anhang 9: Interationsplan_.
 
 ####5.2 Implementierung der Datenstrukturen
 ####5.3 Implementierung der Geschäftslogik
@@ -521,3 +521,12 @@ todo
 ####Anhang 8: Pflichtenheft
 
 todo
+
+####Anhang 9: Iterationsplan
+
+- Erstellen der Railsapp mit Datenbankstruktur & aller API-Calls
+- Erstellen der Angularapp mit Schichttabelle
+- Implementierung Authentifizierung und Autorisierung
+- Implementierung von erstellen und aktualisieren von Schichten
+- Implementierung der Filter für die Schichttabelle
+- Implementierung von erstellen, bearbeiten und löschen Personen, Rollen etc.

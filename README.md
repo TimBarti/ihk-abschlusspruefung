@@ -34,7 +34,7 @@
 
 ### 5 Implementierungsphase
 
-- [ ]  5.1 Iterationsplanung
+- [x]  5.1 Iterationsplanung
 - [ ]  5.2 Implementierung der Datenstrukturen
 - [ ]  5.3 Implementierung der Geschäftslogik
 - [ ]  5.4 Implementierung der Benutzeroberfläche
@@ -62,4 +62,5 @@
 - [ ] Anhang 6: ER-Model
 - [x] Anhang 7: JSON-response
 - [ ] Anhang 8: Pflichtenheft
+- [ ] Anhang 9: Iterationsplan
 
