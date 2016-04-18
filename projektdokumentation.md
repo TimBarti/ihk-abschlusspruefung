@@ -338,11 +338,29 @@ Nach ausführen von `rails db:migrate` wird dieser Code von ActiveRecord in das 
 
 ####5.3 Implementierung der Geschäftslogik
 
+Im folgenden soll der Prozess der Implementierung erläutert werden. Als erstes wird jedoch das allgemeine Setup vorgestellt werden. Da es sich bei Ruby und Javascript und Skriptsprachen handelt wurde auf eine IDE verzichtet und stattdessen der gesamte Code mit einem Text Editor erstellt und bearbeitet. Aufgrund seiner zahlreichen Features und Erweiterbarkeit durch Plugins ist die Wahl auf Sublime Text 3 gefallen.
+Der Code wurde mithilfe von Git versioniert, das bietet den Vorteil nach einem Fehler einfach auf einer frühere, funktionierende Version zurück zu wechseln. Desweiteren gibt es die Möglichkeit neue Features in einem extra Branch zu entwickeln, dadurch hat man immer einen stabilen Branch.
+Aufgrund seiner Popularität wurde Github als Host für das Repository gewählt. Desweiteren erhält man dadurch die Möglichkeit ohne Probleme das Projekt auf einem anderen PC zu clonen bzw. bei einem neuen Release es von Github zu pullen. Gemäß dem Iterationsplan wurde als erstes die die Railsapp erstellt.
 
+__Erstellen der Railsapp mit Datenbankstruktur & aller API-Calls:__
+
+ Der erste Schritt war die Erstellung der Datenbankstruktur. Um schon während der Entwicklungsphase Performanceprobleme zu entdecken wurden 377500 Schichten, 500 Mitarbeiter und 10 Abteilungen erstellt. Der nächste Schritt war alle grundlegenden API-Calls (Ausgabe aller Rollen usw.) zu implementieren und unnötige API-Calls (z.B. alle Schichten) zu entfernen. Der letzte Schritt in der ersten Iteration war es ein SQL-query zu schreiben, welches alle nötigen Informationen, für die Hauptansicht des Schichtplanners, aus der Datenbank ausliest.
+
+__Implementierung Authentifizierung und Autorisierung:__
+
+Um Authentifizierung zu implementieren wurde der Gem _Devise_ gewählt. Dieser ist in der Rubycommunity sehr weiter verbreitet und bietet eine große Anzahl an Features. Um dafür zu sorgen das nicht jede Nutzer auch Daten erstellen, bearbeiten und löschen wurde die Autorisierung mithilfe von CanCanCan integriert.
+
+__Implementierung von erstellen und aktualisieren von Schichten:__
+
+
+
+__Implementierung der Filter für die Schichttabelle:__
+
+__Implementierung von erstellen, bearbeiten und löschen Personen, Rollen:__
 
 ####5.4 Implementierung der Benutzeroberfläche
 
-Die GUI wurde auf Basis der angefertigten Mockups implmenetiert. Um einen konsequentes Aussehen und eine einfache Umsetzung zu gewährleisten wurde dabei auf Bootstrap als CSS-Framework gesetzt. Dieses bietet uns dank Grid eine einfach Möglichkeit unsere Objekte zu organisieren. Desweiteren gibt es fertige Lösungen für Dropdownmenus, Modals oder Akkordions. Komponenten die Javascript benötigen, setzen allerdings alle jQuery voraus. Da AngularJS mit einer abgespeckten Version von jQuery, namens jqLite, daherkommt, möchten wir auf jQuery verzichten. Aus diesem Grund greifen wir auf angular-bootstrap zurück.
+Die GUI wurde auf Basis der angefertigten Mockups implementiert. Um einen konsequentes Aussehen und eine einfache Umsetzung zu gewährleisten wurde dabei auf Bootstrap als CSS-Framework gesetzt. Dieses bietet uns dank dem Grid-System eine einfach Möglichkeit unsere Objekte zu organisieren. Desweiteren gibt es fertige Lösungen für Dropdownmenus, Modals oder Akkordions. Komponenten die Javascript benötigen, setzen allerdings alle jQuery voraus. Da AngularJS mit einer abgespeckten Version von jQuery, namens jqLite, daherkommt, möchten wir auf jQuery verzichten. Aus diesem Grund greifen wir auf angular-bootstrap zurück.
 In dieser vom Angular Team gepflegten Bibliothek wurden alle Bootstrapkomponenten die Javascript benötigen in Angular neu geschrieben.
 
 ##6 Abnahme- und Einführungsphase
