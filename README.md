@@ -60,4 +60,5 @@
 - [x] Anhang 4: Main Query
 - [ ] Anhang 5: GUI Mockup
 - [ ] Anhang 6: ER-Model
+- [x] Anhang 6: JSON-response
 

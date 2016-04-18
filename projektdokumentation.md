@@ -230,7 +230,7 @@ kommt später
 ####3.4 Lastenheft / Fachkonzept
 
 Am Ende der Analysephase wurde zusammen mit dem Teamlead vom Customer Care ein Lastenheft erstellt, welches alle
-Anforderungen des Auftraggebers an die ANwendung zusammenfasst.
+Anforderungen des Auftraggebers an die Anwendung zusammenfasst.
 Einen Auschschnitt aus dem Lastenheft ist im _Anhang 3: Auszug des Lastenheftes_ zu finden.
 
 ##4 Entwurfsphase
@@ -287,6 +287,21 @@ Um notwendigen Datentypen zu erabeiten wurde der bestehende Schichtplanner analy
 Die Beziehungen zwischen den einzelnen Einheiten ist im _Anhang 6: ER-Model_ dargestellt.
 
 ####4.5 Geschäftslogik
+
+In Ruby on Rails entspricht jede Datenbanktabelle einem Model, das heißt wie haben 7 Model.
+Auf ein Model kommt mindestens ein Controller, welcher standardmäßig alle REST Aktionen abdeckt.
+Bei dem Schichtplanner handelt es sich im Grunde um eine simple CRUD-Anwendung, aus diesem Grund bleiben wir bei einem Controller pro Model.
+
+Wie bereits erwähnt ist Ruby on Rails neben dem aus- und einlesen von Daten auch für die Autorisierung und Authentifizierung zuständig. Diese Aufgaben werden mithilfe der Gems Devise und CanCanCan gelöst.
+
+Im Frontend wird basierend auf dem JSON dynamisch die Tabelle erstellt, siehe _Anhang 7: JSON-response_. 
+Desweiteren werden die dargestellten Informationen gefiltert, um das zu realisieren werden die bestehenden Informationen mit den aktiven Filterkriterien verglichen und entsprechen angezeigt oder nicht.
+Um den Nutzer zu helfen valide Daten (z.B. neue Personen) zu erstellen , werden die eingegeben Daten mithilfe von Stringoperationen auf ihre Vailidität überprüft. Dadurch können Daten überprüft werden bevor Sie zum Server gesendet werden.
+
+Da diese Form von Validierung durch deaktiveren von Javascript umgangen werden kann, ist es essenziell das es eine serverseitige Validierung gibt.
+Um das zu gewährleisten werden Contraints direkt in PostgreSQL angelegt. Diese Lösung bietet einen Kompromiss aus valider Daten in der Datenbank und einfache Benutzbarkeit für den Nutzer. Der Nachteil ist das die Validierungen in 2 Stellen stattfindet das bedeutet, wenn sich die Validierung ändert, muss der Quellcode an 2 Orten angepasst werden.
+
+
 ####4.6 Pflichtenheft
 
 ##5 Implementierungsphase
@@ -434,3 +449,64 @@ todo
 ####Anhang 6: ER-Model
 
 todo
+
+####Anhang 7: JSON-response
+
+[
+  {
+    "id": 2,
+    "name": "person1",
+    "shifts": [
+      {
+        "date_of_shift": "2016-04-18T00:00:00+00:00",
+        "id": 1016,
+        "name": "shift_type6",
+        "shift_type_id": 7
+      },
+      {
+        "date_of_shift": "2016-04-19T00:00:00+00:00",
+        "id": 1017,
+        "name": "shift_type4",
+        "shift_type_id": 5
+      },
+      {
+        "date_of_shift": "2016-04-20T00:00:00+00:00",
+        "id": 1018,
+        "name": "shift_type7",
+        "shift_type_id": 8
+      },
+      {
+        "date_of_shift": "2016-04-21T00:00:00+00:00",
+        "id": 1019,
+        "name": "shift_type2",
+        "shift_type_id": 3
+      },
+      {
+        "date_of_shift": "2016-04-22T00:00:00+00:00",
+        "id": 1020,
+        "name": "shift_type2",
+        "shift_type_id": 3
+      }
+    ],
+    "skills": [
+      {
+        "id": 10,
+        "person_id": 2,
+        "name": "skill9"
+      }
+    ],
+    "roles": [
+      {
+        "name": "role5",
+        "id": 6,
+        "person_id": 2
+      }
+    ],
+    "languages": [
+      null
+    ]
+  },
+  .
+  .
+  .
+]
