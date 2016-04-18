@@ -313,6 +313,29 @@ Dieses legt die Umsetzung des Projektes fest. Einen Auszug davon befindet sich i
 Am Anfang der Implementierungsphase wurde ein Iterationsplan erstellt. Dieser legt die einzelnen Iterationen fest. Am Ende jeder Iteration wird der aktuelle Stand dem Auftraggeber vorgestellt. Der Interationsplan befindet sich im _Anhang 9: Interationsplan_.
 
 ####5.2 Implementierung der Datenstrukturen
+
+Basierend auf dem bereits erstelltem ER-Model wurde mit Hilfe des rails-generators die Tabellenstruktur erstellt. Das könnte für die People Tabelle so aussehen:
+`rails g model person name:string department:references`. 
+
+Dieser Kommandozeilenbefehl erstellt Dateien für das Model, die Tests und die Migration.
+Migrations sind in Rails der Weg um die Struktur der Datenbank zu ändern. Sie erlauben es Änderungen an der Datenbank sehr einfach rückgängig zu machen. Die erstellte Migration sieht dann so aus:
+
+```ruby
+class CreatePerson < ActiveRecord::Migration[5.0]
+  def change
+    create_table :Person do |t|
+      t.string :name
+      t.references :department, foreign_key: true
+
+      t.timestamps
+    end
+  end
+end
+
+```
+
+Dieser Code wird von ActiveRecord in das SQL für die jeweilige Datenbank übersetzt, in unserem Fall PostgreSQL. Diese Form der Datenbankerstellung hat den Vorteil das wir immer eine Primärschlüssel haben der `id` heißt und sich automatisch erhöht, desweiteren haben wir immer die Felder created_at und updated_at die autmatisch von Rails verwaltet werden.
+
 ####5.3 Implementierung der Geschäftslogik
 ####5.4 Implementierung der Benutzeroberfläche
 
