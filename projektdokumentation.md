@@ -301,12 +301,17 @@ Um den Nutzer zu helfen valide Daten (z.B. neue Personen) zu erstellen , werden 
 Da diese Form von Validierung durch deaktiveren von Javascript umgangen werden kann, ist es essenziell das es eine serverseitige Validierung gibt.
 Um das zu gewährleisten werden Contraints direkt in PostgreSQL angelegt. Diese Lösung bietet einen Kompromiss aus valider Daten in der Datenbank und einfache Benutzbarkeit für den Nutzer. Der Nachteil ist das die Validierungen in 2 Stellen stattfindet das bedeutet, wenn sich die Validierung ändert, muss der Quellcode an 2 Orten angepasst werden.
 
-
 ####4.6 Pflichtenheft
+
+Am Ende der Entwurfsphase wurde, basierend auf dem Lastenheft, das Pflichtenheft erstellt.
+Dieses legt die Umsetzung des Projektes fest. Einen Auszug davon befindet sich im _Anhang 8: Pflichtenheft_.
 
 ##5 Implementierungsphase
 
 ####5.1 Iterationsplanung
+
+
+
 ####5.2 Implementierung der Datenstrukturen
 ####5.3 Implementierung der Geschäftslogik
 ####5.4 Implementierung der Benutzeroberfläche
@@ -452,6 +457,7 @@ todo
 
 ####Anhang 7: JSON-response
 
+```json
 [
   {
     "id": 2,
@@ -510,3 +516,8 @@ todo
   .
   .
 ]
+```
+
+####Anhang 8: Pflichtenheft
+
+todo

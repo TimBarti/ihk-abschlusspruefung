@@ -27,10 +27,10 @@
 
 - [x]  4.1 Zielplattform
 - [x]  4.2 Architekturdesign
-- [ ]  4.3 Entwurf der Benutzeroberfläche
-- [ ]  4.4 Datenmodell
-- [ ]  4.5 Geschäftslogik
-- [ ]  4.6 Pflichtenheft
+- [x]  4.3 Entwurf der Benutzeroberfläche
+- [x]  4.4 Datenmodell
+- [x]  4.5 Geschäftslogik
+- [x]  4.6 Pflichtenheft
 
 ### 5 Implementierungsphase
 
@@ -60,5 +60,6 @@
 - [x] Anhang 4: Main Query
 - [ ] Anhang 5: GUI Mockup
 - [ ] Anhang 6: ER-Model
-- [x] Anhang 6: JSON-response
+- [x] Anhang 7: JSON-response
+- [ ] Anhang 8: Pflichtenheft
 
