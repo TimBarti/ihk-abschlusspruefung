@@ -294,7 +294,7 @@ Bei dem Schichtplanner handelt es sich im Grunde um eine simple CRUD-Anwendung, 
 
 Wie bereits erwähnt ist Ruby on Rails neben dem aus- und einlesen von Daten auch für die Autorisierung und Authentifizierung zuständig. Diese Aufgaben werden mithilfe der Gems Devise und CanCanCan gelöst.
 
-Im Frontend wird basierend auf dem JSON dynamisch die Tabelle erstellt, siehe _Anhang 7: JSON-response_. 
+Im Frontend wird basierend auf dem JSON dynamisch die Tabelle erstellt, siehe _Anhang 7: JSON-response_.
 Desweiteren werden die dargestellten Informationen gefiltert, um das zu realisieren werden die bestehenden Informationen mit den aktiven Filterkriterien verglichen und entsprechen angezeigt oder nicht.
 Um den Nutzer zu helfen valide Daten (z.B. neue Personen) zu erstellen , werden die eingegeben Daten mithilfe von Stringoperationen auf ihre Vailidität überprüft. Dadurch können Daten überprüft werden bevor Sie zum Server gesendet werden.
 
@@ -315,7 +315,7 @@ Am Anfang der Implementierungsphase wurde ein Iterationsplan erstellt. Dieser le
 ####5.2 Implementierung der Datenstrukturen
 
 Basierend auf dem bereits erstelltem ER-Model wurde mit Hilfe des rails-generators die Tabellenstruktur erstellt. Das könnte für die People Tabelle so aussehen:
-`rails g model person name:string department:references`. 
+`rails g model person name:string department:references`.
 
 Dieser Kommandozeilenbefehl erstellt Dateien für das Model, die Tests und die Migration.
 Migrations sind in Rails der Weg um die Struktur der Datenbank zu ändern. Sie erlauben es Änderungen an der Datenbank sehr einfach rückgängig zu machen. Die erstellte Migration sieht dann so aus:
@@ -348,15 +348,27 @@ __Erstellen der Railsapp mit Datenbankstruktur & aller API-Calls:__
 
 __Implementierung Authentifizierung und Autorisierung:__
 
-Um Authentifizierung zu implementieren wurde der Gem _Devise_ gewählt. Dieser ist in der Rubycommunity sehr weiter verbreitet und bietet eine große Anzahl an Features. Um dafür zu sorgen das nicht jede Nutzer auch Daten erstellen, bearbeiten und löschen wurde die Autorisierung mithilfe von CanCanCan integriert.
+Um Authentifizierung zu implementieren wurde der Gem _Devise_ gewählt. Dieser ist in der Rubycommunity sehr weiter verbreitet und bietet eine große Anzahl an Features. Um dafür zu sorgen das nicht jede Nutzer auch Daten erstellen, bearbeiten und löschen wurde die Autorisierung mithilfe von _CanCanCan_ integriert.
 
 __Implementierung von erstellen und aktualisieren von Schichten:__
 
-
+Das aktualisieren und erstellen von Schichten soll auf die gleiche Art und Weise geschehen. Die zu bearbeitenden Schichten werden durch das gedrückt halten der linken Maustaste ausgewählt. Ausgewählte Schichten sind durch eine andere Hintergrundfarbe hervorgehoben. Durch einen weiteren Klick auf die bereits ausgewählten Schichten öffnet sich ein Popup (Modal), innerhalb dessen werden alle Möglichen Möglichen Schichten angezeigt. Mit dem Klick auf die neue Schicht werden alle zuvor markierten Schichten aktualisiert und die Hintergrundfarbe wird auf die Standardfarbe zurück gesetzt.
 
 __Implementierung der Filter für die Schichttabelle:__
 
+AngularJS kommt von Haus aus schon mit dem Prinzip der Filter. Diese werden über eine Pipe an die darzustellenden Informationen angefügt.
+
+```html
+ <tr ng-repeat="(i, person) in dept.people | peopleFilter:filter.criteria">
+ ```
+
+Mit `dept.people` sind die Informationen aller dazustellenden Personen. Mit Hilfe von `ng-repeat` wird über das Array iteriert und jede Zeile der Tabelle erstellt.
+Nach der Pipe kommt der Name des Filters der angewendet werden soll und nach dem Doppelpunkt kommen die Daten die an den Filter übergeben werden. `filter.criteria` verändert sich durch das setzen der Filteroptionen, wodurch dann der Inhalt der Tabelle beeinflusst wird.
+
 __Implementierung von erstellen, bearbeiten und löschen Personen, Rollen:__
+
+Für jede Operation aller Datensätze soll eine extra Seite zur Verfügung stellen. Erreichbar sind diese Operationen über die Einstellungen.
+Es werden mithilfe von Bootstrap simple html Formulare erstellt. Die eingebenen Daten werden dann in AngularJS validiert und dann über die API an die Datenbank übermittelt.
 
 ####5.4 Implementierung der Benutzeroberfläche
 
