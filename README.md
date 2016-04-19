@@ -44,10 +44,12 @@ todo:
 
 ### 6 Abnahme- und Einführungsphase
 
-- [ ]  6.1 Abnahme durch den Fachbereich
+- [x]  6.1 Abnahme durch den Fachbereich
 - [ ]  6.2 Deployment und Einführung
 
 ### 7 Dokumentation
+
+- [x] Dokumentation
 
 ### 8 Fazit
 

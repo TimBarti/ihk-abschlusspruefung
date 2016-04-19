@@ -392,6 +392,13 @@ kommt später
 
 ##7 Dokumentation
 
+Zum erstellen der Projektdokumentation wurde _Markdown_ als 'markup language' verwendet.
+Es bietet die Möglichkeit sehr einfach grundlegende Textformationen durchzuführen und lässt sich ohne Probleme in html oder pdf übersetzen.
+
+Desweiteren wurde auch die Projektdokumentation mit Git versioniert und auf Github gehostet. Das führte auch dazu das die Dokumentation online mit dem Githubtexteditor bearbeitet werden konnte.
+
+Bei der Erstellung des Schichtplanners wurde großen Wert auf eine einfache und selbsterklärende Benutzung, trotzdem wurde die Anwendung für die Mitarbeiter dokumentiert. Aus diesem Grund wurde ein Artikel im internen Wiki erstellt. Dieser erklärt kurz alle Features und wie sie benutzt werden können.
+
 ##8 Fazit
 
 ####8.1 Soll-/Ist-Vergleich
