@@ -404,7 +404,7 @@ Bei der Erstellung des Schichtplanners wurde großen Wert auf eine einfache und 
 
 ####8.1 Soll-/Ist-Vergleich
 
-Zum Ende hin kann gesagt werden das alle im Pflichtenheft festgelegten Vorgaben erfüllt wurden und der vorgegene Zeitrahmen von 70 Stunden lediglich um 1 Stunde überschritten wurde. Grundsätzlich wurde für die Analyse, Entwurf etwas zu viel eingeplant. Die Integration des Frontends und die Einrichtung des CI Workflows nahmen hingegegen deutlich mehr Zeit in Anspruch als geplant. Diese Diskrepanz ist darauf zurückzuführen das der Autor mit den verwendeten Tools noch nicht sehr vertraut war.
+Zum Ende hin kann gesagt werden das alle im Pflichtenheft festgelegten Vorgaben erfüllt wurden und der vorgegebene Zeitrahmen von 70 Stunden lediglich um 1 Stunde überschritten wurde. Grundsätzlich wurde für die Analyse, Entwurf etwas zu viel eingeplant. Die Integration des Frontends und die Einrichtung des CI Workflows nahmen hingegegen mehr Zeit in Anspruch als geplant. Diese Diskrepanz ist darauf zurückzuführen das der Autor mit den verwendeten Tools noch nicht sehr vertraut war.
 
 Projektphase | geplante Zeit (in Stunden) | genutzte Zeit (in Stunden) | Differenz (in Stunden)
 -------------|--------------------------- | -------------------------- | ---------------------
@@ -424,12 +424,18 @@ Implementierung des Frontends | 25 | 28 | +3
 __Deployment__ | __10__ | __12__ | __+2__
 Aufsetzen des Server | 2 | 1 | -1
 Einrichtung des Coninuous Integration-Prozesses | 8 | 11 | +3
-__Dokumentation__ | __10__ |  __12__ | __-1__
+__Dokumentation__ | __10__ |  __12__ | __+2__
 Erstellen der Projektdokumentation | 10 | 12  | +2
 __gesamt:__ | __70__ | __71__ | __+1__
 
 ####8.2 Lessons Learned
+
+Grundsätzlich konnte der Autor sein Wissen und seine Erfahrung im Projektmanagement deutlich verbessern.
+Hinzukommt das verbesserte Verständis von Test Driven Development in Rails, besseres allgemeines Verständnis von AngularJS, vertieftes Wissen von PostgreSQL und komplexen SQL-queries und mehr praktische Erfahrung beim Erstellen eines Continious-Integration-Workflows.
+
 ####8.3 Ausblick
+
+
 
 ##Anhang:
 
