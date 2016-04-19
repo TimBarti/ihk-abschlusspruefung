@@ -435,6 +435,11 @@ Hinzukommt das verbesserte Verständis von Test Driven Development in Rails, bes
 
 ####8.3 Ausblick
 
+Da es sich bei der Anwendung um eine MVP (minimum valuable product) handelt, ist noch viel Raum für weiter Funktionen. Die Umsetzung von TDD und CI kommen der kontinuierlichen Entwicklung der Anwendung entgegen.
+
+Denkbare Features wären eine Art Dashboard, wo man sich z.B. angucken kann wer wie oft welche Schicht hat.
+Eine Idee ist auch das die Schichten automatisch erstellt werden, indem für jede Person Regeln festgelegt werden. Zum Beispiel könnte eine Regel so aussehen das eine Person 20% Spätschicht, 50% Mittelschicht und 30% Frühschicht hat. Ein Algorythmus würde dann allen Personen automatisch ihre Schichten zuordnen. Dadurch würde sich der administrationsaufwand für die Teamleiter erheblich verringern.
+Wenn man das ganze noch einen Schritt weiter nehmen würde könnten die Mitarbeiter die geänderten Schichten beantragen und der Teamleiter würde es nur noch genehmigen oder es würde sogar automatisch übernommen werden, wenn die Änderung den Regeln entspricht.
 
 
 ##Anhang:
