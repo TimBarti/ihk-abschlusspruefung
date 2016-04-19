@@ -65,12 +65,13 @@ Durchgeführt wurde die Ausbildung bei der Firma eKomi Limited in Berlin. Das In
 Das Produkt ist es für Unternehmen unabhängige, transaktionsbasierte Bewertungen zu sammeln.
 Zu unsere Kunden zählen größtenteils Onlineshop, allerdings auch Banken und Versicherungen.
 Durch die unabhängig gesammelten Bewertungen, soll bei Neukunden Vertrauen für den Onlineshop geweckt werden.
+Desweiteren erhöhen die gesammelten Bewertungne in signifikantem Maße das SEO-Ranking.
 
 ####1.1 Projektbeschreibung
 
 Bei eKomi haben die einzelnen Abteilungen in der Regel zwischen 10 und 25 Mitarbeiter.
-Die meisten Mitarbeiter haben eine feste Arbeitszeit um unseren Kunden den Support zu garantieren.
-Aus diesem Grund wird jedem Mitarbeiter von dem zuständigen Teamlead eine feste Schicht zugeordnet.
+Die meisten Mitarbeiter haben eine feste Arbeitszeit, um den Kunden zuverlässigen Support zu garantieren.
+Aus diesem Grund wird jedem Mitarbeiter von dem zuständigen Teamleiter eine feste Schicht zugeordnet.
 Innerhalb einer Abteilung gibt es Mitarbeiter mit vielen unterschiedlichen Sprachen, die basierend auf der Sprache bestimmte Schichten belegen müssen.
 Desweiteren muss der Schichtplaner anzeigen, wenn ein Mitarbeiter im Urlaub oder Krank ist.
 
@@ -80,7 +81,7 @@ Grundsätzlich wird der Schichtplanner natürlich nur von Leuten aktiv genutzt, 
 Zum Beispiel unsere Entwicklungsabteilung hat keine festen Arbeitszeiten und kann zwischen 8 - 20 Uhr arbeiten.
 
 Die Leute die feste Schichten haben, lassen sich in 2 Gruppen unterteilen.
-Erstens normale Mitarbeiter die nur bestehende Schichten betrachten und Teamleads die bestehende Schichten
+Erstens normale Mitarbeiter die nur bestehende Schichten betrachten und Teamleitern die bestehende Schichten
 bearbeiten und neue Schichten und Personen anlegen.
 
 ####1.3 Projektziel
@@ -89,11 +90,11 @@ Ziel des Projektes ist es einen übersichtlichen und einfach zu benutzenden Onli
 
 Der Fokus liegt dabei zum einen auf das betrachten der bereits bestehenden Schichten.
 Welches bei großen Teams vorallem durch Filteroptionen vereinfacht werden soll.
-Zum anderen soll den Teamleads ein intuitives Interface zum erstellen, bearbeiten und löschen von Daten zur Verfügung gestellt werden.
+Zum anderen soll den Teamleitern ein intuitives Interface zum erstellen, bearbeiten und löschen von Daten zur Verfügung gestellt werden.
 
 Aufgrund der Tatsache das in einem Team viele Mitarbeiter mit unterschiedlichen Sprachen sind und diese Sprachen
-ausschlaggebend für die Schichtplannung sind, muss der Schichtplanner neben der Person und den zugehörigen Schichten auch die Sprachen in welcher die Person Kunden betreut, dargestellt werden.
-Neben der Sprache soll jeder Person auch eine oder mehrere Rollen zugeordnet werden können, z.B. Teamlead, Support-Agent, Trainer etc.
+ausschlaggebend für die Schichtplannung sind, muss der Schichtplanner neben der Person und den zugehörigen Schichten auch die Sprachen, in welcher der Mitarbeiter Kunden betreut, dargestellt werden.
+Neben der Sprache soll jeder Person auch eine oder mehrere Rollen zugeordnet werden können, z.B. Teamleiter, Support-Agent, Trainer etc.
 Desweiteren soll jedem Mitarbeiter auch ein Skill bzw. Aufgabenfeld zugeordnet werden können, z.B. 1st Level, 2nd Level oder bestimmte Programmiersprachen.
 
 Nach all diesen Kriterien soll gefiltert können. Hinzukommt das es möglich sein soll eine Person über den Namen zu finden.
@@ -101,11 +102,9 @@ Ein Dropdownmenu soll es ermöglichen zwischen Abteilungen zu wechseln.
 
 Um eine übersichtliche Ansicht zu gewährleisten soll pro Abteilung nur 1 Woche werden, entsprechende Buttons sollen es ermöglichen die nächste bzw. vorherige Woche einzusehen.
 
-
-
 ####1.4 Projektbegründung
 
-Es gibt im Moment einen Schichtplaner, der auch intern entwickelt wurde. Allerdings weist dieser erhebliche Schwächen in der Benutzbarkeit und in der Übersichtlichkeit auf.
+Der alte Schichtplaner wurde auch intern entwickelt, allerdings weist dieser erhebliche Schwächen in der Benutzbarkeit und in der Übersichtlichkeit auf, siehe _Anhang 10: Screenshot vom alten Schichtplanner_.
 
 Zum einen wird immer der gesamte Monat abgebildet, allerdings werden auf dem Bildschirm aus Platzgründen nur 2 Wochen angezeigt. Um die restlichen 2 Wochen zu sehen muss man nach rechts scrollen, wobei die Anzeige der Namen verschwindet. Das macht es sehr umständlich die Schichten für einen speziellen Mitarbeiter in den letzten 2 Wochen eines Monats herauszufinden.
 
@@ -133,18 +132,18 @@ _Tabelle 1: Grobe Zeitplanung_
 
 ####2.2 Ressourcenplanung
 
-In _Anhang 2: Verwendete Ressourcen_ sind alle verwendeten Ressourcen aufgelistet. Darunter zählen sowohl Hard-, Software als auch Personal.
-Aufgrund der Leidenschaft des Autors zu Open Source wurde größtenteils auf Open Source Software gesetzt.
+In _Anhang 2: Verwendete Ressourcen_ sind alle verwendeten Ressourcen aufgelistet. Darunter zählen sowohl Hard- und Software als auch Personal.
+Aufgrund der Leidenschaft des Autors zu Open Source, wurde größtenteils auf Open Source Software gesetzt.
 Das hatte auch den Vorteil das keine Lizenzkosten angefallen sind.
 
 ####2.3 Entwicklungsprozess
 
 Um möglichst häufig und frühzeitig Feedback zu erhalten, hat sich Autor für einen agilen Ansatz entschieden.
-Dabei soll am Ende jedes Tages ein kurzes Gespräch mit den Auftraggebern geführt werden, dadürch soll gewährleistet werden das etwaige Missverständnisse frühzeitig aufgedeckt und dementsprechend behoben werden können. Durch das rechtzeitige entdecken von falschen Entwicklungen, ist deren Wiedergutmachung günstiger als bei einer späteren Entdeckung.
+Dabei soll am Ende jeder Iteration ein kurzes Gespräch mit dem Ausbilder geführt werden, dadürch soll gewährleistet werden das etwaige Missverständnisse frühzeitig aufgedeckt und dementsprechend behoben werden können. Durch das rechtzeitige entdecken von falschen Entwicklungen, ist deren Wiedergutmachung günstiger als bei einer späteren Entdeckung.
 
 Desweiteren soll die Anwendung testgetrieben entwickelt werden. Test Driven Development führt in der Regel zu besserer Codequalität und einfacherer Erweiterbarkeit. Wenn der Code verbessert (refactoring) werden soll, kann deren Funktionalität durch die bestehenden Tests überprüft werden.
 
-Das ist vorallem wichtig das es sich bei diesem Projekt um eine minimal Lösung (minimum valuable product).
+Das ist vorallem wichtig, da es sich bei diesem Projekt um eine minimal Lösung handelt.
 Es ist geplant das das Produkt nach Abschluss der initialen Entwicklungsphase weiter entwickelt wird.
 
 ##3 Analysephase
@@ -153,7 +152,7 @@ Es ist geplant das das Produkt nach Abschluss der initialen Entwicklungsphase we
 
 Wie bereits unter Punkt 1.4 beschrieben gibt es bereits ein bestehendes Produkt, welches jedoch __erhebliche__
 Schwächen in Punkto Benutzbarkeit und Bedienbarkeit hat. Das führt dazu das viele Mitarbeiter unnötig viel Zeit dafür aufwenden ihre eigenen oder die Schichten von Kollegen herrauszufinden.
-Desweiteren ist das erstellen neuer Schichten und Personen umständlich, was auch zu ineffizienter Arbeit der Teamleads führt.
+Desweiteren ist das erstellen neuer Schichten und Personen umständlich, was auch zu ineffizienter Arbeit der Teamleiter führt.
 
 ####3.2 Wirtschaftlichkeitsanalyse
 
@@ -167,30 +166,32 @@ Aus diesem Grund soll das Projekt intern entwickelt werden.
 
 ####3.2.2 Projektkosten
 
-Die Kosten die während der Umsetzung des Projektes anfallen würden, sollen berechnet werden.
-Da bei der Software auf Open Source gesetzt wurde fallen keine Kosten für Lizenzen an.
+Folgend sollen die Kosten für die Umsetzung des Projektes berechnet werden.
+Da bei der Entwicklung auf Open Source gesetzt wurde, fallen keine Kosten für Lizenzen an.
 Die anstehenden Ausgaben entstehen nur in Form von Arbeitszeit von internen Mitarbeitern.
 Dabei wird für den Auszubildenen ein Stundensatz von 5€ festgelegt und für einen fest angestellten
-Teamlead 25€.
+Teamleiter 25€.
 
-Die gesamten Projektkosten und deren Zusammensetzung können der _Tabelle 2: Kostenaufstellung entnommen werden.
+Die gesamten Projektkosten und deren Zusammensetzung können der _Tabelle 2: Kostenaufstellung_ entnommen werden.
 
 Vorgang | Mitarbeiter | Zeit (in Stunden) | Kosten (in €)
 --------|-------------|------------------|-------
 Entwicklungskosten | 1 Auszubildender | 70 | 350
-Erstellung des Lastenheftes | 1 Teamlead | 2 | 50
-tägliches Feedback | 1 Teamlead | 3 | 75
+Erstellung des Lastenheftes | 1 Teamleiter | 2 | 50
+tägliches Feedback | 1 Teamleiter | 3 | 75
 __Projektkosten gesamt:__ | | | __475__
+
+_Tabelle 2: Kostenaufstellung_
 
 ####3.2.3 Amortisationsdauer
 
-Folgend soll berechnet werden, wie lange es dauern wird bis sich die Ausgaben amortisiert haben und ab wann das Produkt Gewinn für das Unternehmen erwirtschaftet.
+Als nächstes soll berechnet werden, wie lange es dauern wird bis sich die Ausgaben amortisiert haben und ab wann das Produkt Gewinn für das Unternehmen erwirtschaftet.
 
 Der primäre Vorteil des Produktes liegt in der verbesserten Bedienbarkeit, welche dazu führt das weniger Zeit notwendig ist um bestimmte Aktionen durchzuführen.
 
 Eine kleine Umfrage hat ergeben das ungefähr 70% der Mitarbeiter in festen Schichten arbeiten und dementsprechend den Schichtplaner jeden Tag nutzen. Desweiteren hat die Umfrage ergeben das der alte Schichtplanner im Schnitt jeden Tag für 2 Minuten benutzt wird.
 Durch die massiv verbesserte Übersichtlichkeit wird davon ausgegangen, das das betrachten von Schichten einer bestimmten Person um 50% schneller ist.
-Das administieren der Schichten durch den Teamlead soll 20% schneller gehen.
+Das administieren der Schichten durch den Teamleiter soll 20% schneller gehen.
 
 Vorgang | Anzahl _pro Monat_ | Zeit (alt) _pro Vorgang_ | Zeit (neu) _pro Vorgang_ | Einsparung
 --------|--------|------------|------------|-----------
@@ -210,12 +211,12 @@ _Ersparnis durch schnelleren Zugriff auf bestehende Schichten:_
 Wie bereits in der Tabelle ersichtlich ergibt sich dadurch im Monat eine Zeitersparnis von __35 Stunden!__
 Wenn wir von einem durchschnittlichen Stundenlohn von 15€ ausgehen ergibt das bereits im ersten Monat eine Einsparung von __525 €!__
 
-_Ersparnis durch vereinfachte Administartion des Schichtplanners:_
+_Ersparnis durch vereinfachte Administration des Schichtplanners:_
 
-Wir gehen davon aus das ein Teamlead im Schnitt 5 Minuten am Tag für die Administration des Schichtplanners aufbringen muss.
+Wir gehen davon aus das ein Teamleiter im Schnitt 5 Minuten am Tag für die Administration des Schichtplanners aufbringen muss.
 Bei 10 verschiedenen Abteilungen beläuft sich das auf 200 (10 Zugriffe pro Tag x 20 Tage) Vorgänge im Monat.
 Bei der Administration gab es weniger potenzial den Workflow zu verbessern, aus diesem Grund ist der Vorgang nur 20% schneller.
-Was trotzdem jeden Tag 1 Minute Zeit einspart. Bei Teamleads gehen wir von einem durchschnittlichen Stundenlohn von 25 € aus.
+Was trotzdem jeden Tag 1 Minute Zeit einspart. Bei Teamleitern gehen wir von einem durchschnittlichen Stundenlohn von 25 € aus.
 Das würde bedeuten das weitere __83,33 €__ (3 1/3 h x 25 € / h) pro Monat gespart werden können.
 
 Das bedeutet das wir pro Monat __608,33 €__ sparen! Das sind 30,42 € pro Tag.
@@ -229,8 +230,7 @@ kommt später
 
 ####3.4 Lastenheft / Fachkonzept
 
-Am Ende der Analysephase wurde zusammen mit dem Teamlead vom Customer Care ein Lastenheft erstellt, welches alle
-Anforderungen des Auftraggebers an die Anwendung zusammenfasst.
+Am Ende der Analysephase wurde zusammen mit dem Teamleiter vom Customer Care ein Lastenheft erstellt, welches alle Anforderungen des Auftraggebers an die Anwendung zusammenfasst.
 Einen Auschschnitt aus dem Lastenheft ist im _Anhang 3: Auszug des Lastenheftes_ zu finden.
 
 ##4 Entwurfsphase
@@ -238,12 +238,12 @@ Einen Auschschnitt aus dem Lastenheft ist im _Anhang 3: Auszug des Lastenheftes_
 ####4.1 Zielplattform
 
 Vom Auftraggeber gab es keine Beschränkung welche Programmiersprache verwendet werden soll.
-Es sollte lediglich ein webbasierter Schichtplanner sein.
+Es sollte lediglich ein webbasierter Schichtplanner entstehen.
 
 Aus diesem Grund hat sich der Autor für Software entschieden die seinen persönlichen Vorlieben entspricht.
 Als Programmiersprache wurde Ruby gewählt, was zur Wahl von Ruby on Rails als Webframework führte.
-Da ein Schichtplanner sehr dynamisch ist und viel Javascript erfordert, hat sich der Autor für ein dediziertes Javascript-Frontend-Framework entschieden. Im speziellen wurde AngularJS ausgewählt.
-Da die Darstellung der Daten AngularJS obliegt, wird Ruby on Rails als JSON-API betrieben.
+Da ein Schichtplanner sehr dynamisch ist und viel Javascript erfordert, hat sich der Autor für ein dediziertes Javascript-Frontend-Framework entschieden. Im speziellen wurde AngularJS ausgewählt. Um einen konsequentes Aussehen und eine einfache Umsetzung zu gewährleisten wurde dabei auf Bootstrap als CSS-Framework gesetzt.
+Da die Darstellung der Daten AngularJS und Bootstrap obliegt, wird Ruby on Rails als JSON-API betrieben.
 Um die Daten permanent zu speichern wurde PostgreSQL als ORDBMS gewählt.
 
 ####4.2 Architekturdesign
@@ -257,7 +257,7 @@ AngularJS folgt nach eigener Aussage dem Model-View-Whatever Pattern, es ist als
 Desweiteren wird das two-way-databinding Pattern implementiert, was dazu führt das Daten die im Frontend geändert werden, automatisch an das Backend kommuniziert werden. Dieses Feature zusammen mit einer high-level-abstraction für AJAX-Calls führt dazu das es wesentlich einfacher ist eine dynamische Webapp zu bauen, wo sich viele Daten ändern können.
 Die Hauptaufgabe von Angular ist es die Informationen, die als JSON übermittelt wurden, ansprechend darzustellen und zu filtern.
 
-Da genau bekannt ist, in welcher Form die Daten gespeichert werden sollen, hat sich der Autor für eine Relationelle Datenbank entschieden.
+Da genau bekannt ist, in welcher Form die Daten gespeichert werden sollen, hat sich der Autor für eine relationelle Datenbank entschieden.
 Da wir die Informationen als JSON verschicken, wurde ein Datenbankmanagementsystem gesucht, welches den Datentyp JSON nativ unterstützt.
 Aufgrund diese Kriterien ist die Wahl ist auf PostgreSQL gefallen.
 
@@ -266,7 +266,7 @@ Da für die Hauptansicht 6 verschiedene Tabellen abgefragt werden, wird dafür a
 ####4.3 Entwurf der Benutzeroberfläche
 
 Der wichtigste Teil der Benutzeroberfläche ist, die Ansicht die alle Personen einer Abteilung und ihre zugehörigen Schichten in einer spezifischen Woche darstellt. Um eine bestimmte Person oder Personengruppe schnell zu finden, sollen detaillierte Filteroptionen zur Verfügung gestellt werden. Damit die Filteroptionen mit wachsender Anzahl von Kriterien nicht unübersichtlich werden, sollen die möglichen Kriterien nach Kategorie in einem Dropdownmenu gruppiert werden. Das heißt es wird die Möglichkeit geben ein andere Abteilung anzuzeigen, nach Role, Skill, Sprache und Schicht per Checkbox zu filtern und eine bestimmte Person über ihren Namen zu suchen.
-Alle Personen ihre Attribute und Schichten werden in einer Tabelle dargestellt. Desweiteren gibt es natürlich die Möglichkeit die nächste bzw. vorherige Woche anzuzeigen. Innerhalb dieser Ansicht können lediglich die bestehenden Schichten geändert und neue zugewiesen werden.
+Alle Personen, ihre Attribute und Schichten werden in einer Tabelle dargestellt. Desweiteren gibt es natürlich die Möglichkeit die nächste bzw. vorherige Woche anzuzeigen. Innerhalb dieser Ansicht können lediglich die bestehenden Schichten geändert und neue zugewiesen werden.
 
 Alle weiteren Aktionen, wie zum Beispiel das erstellen, bearbeiten und löschen von Rollen, Person etc, sind in extra Seiten ausgelagert um die Tabelle nicht mit Funktionen zu überladen.
 
@@ -288,18 +288,18 @@ Die Beziehungen zwischen den einzelnen Einheiten ist im _Anhang 6: ER-Model_ dar
 
 ####4.5 Geschäftslogik
 
-In Ruby on Rails entspricht jede Datenbanktabelle einem Model, das heißt wie haben 7 Model.
+In Ruby on Rails entspricht jede Datenbanktabelle einem Model, das heißt es gibt 7 Models.
 Auf ein Model kommt mindestens ein Controller, welcher standardmäßig alle REST Aktionen abdeckt.
 Bei dem Schichtplanner handelt es sich im Grunde um eine simple CRUD-Anwendung, aus diesem Grund bleiben wir bei einem Controller pro Model.
 
-Wie bereits erwähnt ist Ruby on Rails neben dem aus- und einlesen von Daten auch für die Autorisierung und Authentifizierung zuständig. Diese Aufgaben werden mithilfe der Gems Devise und CanCanCan gelöst.
+Wie bereits erwähnt ist Ruby on Rails neben dem aus- und einlesen von Daten auch für die Autorisierung und Authentifizierung zuständig. Diese Aufgaben werden mithilfe der Gems CanCanCan und Devise gelöst.
 
 Im Frontend wird basierend auf dem JSON dynamisch die Tabelle erstellt, siehe _Anhang 7: JSON-response_.
-Desweiteren werden die dargestellten Informationen gefiltert, um das zu realisieren werden die bestehenden Informationen mit den aktiven Filterkriterien verglichen und entsprechen angezeigt oder nicht.
+Desweiteren werden die dargestellten Informationen gefiltert, um das zu realisieren werden die bestehenden Informationen mit den aktiven Filterkriterien verglichen und entsprechend angezeigt oder nicht.
 Um den Nutzer zu helfen valide Daten (z.B. neue Personen) zu erstellen , werden die eingegeben Daten mithilfe von Stringoperationen auf ihre Vailidität überprüft. Dadurch können Daten überprüft werden bevor Sie zum Server gesendet werden.
 
 Da diese Form von Validierung durch deaktiveren von Javascript umgangen werden kann, ist es essenziell das es eine serverseitige Validierung gibt.
-Um das zu gewährleisten werden Contraints direkt in PostgreSQL angelegt. Diese Lösung bietet einen Kompromiss aus valider Daten in der Datenbank und einfache Benutzbarkeit für den Nutzer. Der Nachteil ist das die Validierungen in 2 Stellen stattfindet das bedeutet, wenn sich die Validierung ändert, muss der Quellcode an 2 Orten angepasst werden.
+Um das zu gewährleisten werden Constraints direkt in PostgreSQL angelegt. Diese Lösung bietet einen Kompromiss aus valider Daten in der Datenbank und einfache Benutzbarkeit für den Nutzer. Der Nachteil ist das die Validierungen in 2 Stellen stattfindet das bedeutet, wenn sich die Validierung ändert, muss der Quellcode an 2 Stellen angepasst werden.
 
 ####4.6 Pflichtenheft
 
@@ -338,20 +338,20 @@ Nach ausführen von `rails db:migrate` wird dieser Code von ActiveRecord in das 
 ####5.3 Implementierung der Geschäftslogik
 
 Im folgenden soll der Prozess der Implementierung erläutert werden. Als erstes wird jedoch das allgemeine Setup vorgestellt werden. Da es sich bei Ruby und Javascript und Skriptsprachen handelt wurde auf eine IDE verzichtet und stattdessen der gesamte Code mit einem Text Editor erstellt und bearbeitet. Aufgrund seiner zahlreichen Features und Erweiterbarkeit durch Plugins ist die Wahl auf Sublime Text 3 gefallen.
-Der Code wurde mithilfe von Git versioniert, das bietet den Vorteil nach einem Fehler einfach auf einer frühere, funktionierende Version zurück zu wechseln. Desweiteren gibt es die Möglichkeit neue Features in einem extra Branch zu entwickeln, dadurch hat man immer einen stabilen Branch.
+Der Code wurde mithilfe von Git versioniert, das bietet den Vorteil nach einem Fehler einfach auf einer frühere, funktionierende Version zurück gewechselt werden kann. Desweiteren gibt es die Möglichkeit neue Features in einem extra Branch zu entwickeln, dadurch hat man immer einen stabile Version.
 Aufgrund seiner Popularität wurde Github als Host für das Repository gewählt. Desweiteren erhält man dadurch die Möglichkeit ohne Probleme das Projekt auf einem anderen PC zu clonen bzw. bei einem neuen Release es von Github zu pullen. Gemäß dem Iterationsplan wurde als erstes die die Railsapp erstellt.
 
 __Erstellen der Railsapp mit Datenbankstruktur & aller API-Calls:__
 
- Der erste Schritt war die Erstellung der Datenbankstruktur. Um schon während der Entwicklungsphase Performanceprobleme zu entdecken wurden 377500 Schichten, 500 Mitarbeiter und 10 Abteilungen erstellt. Der nächste Schritt war alle grundlegenden API-Calls (Ausgabe aller Rollen usw.) zu implementieren und unnötige API-Calls (z.B. alle Schichten) zu entfernen. Der letzte Schritt in der ersten Iteration war es ein SQL-query zu schreiben, welches alle nötigen Informationen, für die Hauptansicht des Schichtplanners, aus der Datenbank ausliest.
+ Der erste Schritt war die Erstellung der Datenbankstruktur. Um schon während der Entwicklungsphase Performanceprobleme zu entdecken wurden 377500 Schichten, 500 Mitarbeiter und 10 Abteilungen erstellt. Der nächste Schritt war alle grundlegenden API-Calls (Ausgabe aller Rollen usw.) zu implementieren und unnötige API-Calls (z.B. alle Schichten) zu entfernen. Der letzte Schritt in der ersten Iteration war es ein SQL-query zu schreiben, welches alle nötigen Informationen, für die Hauptansicht des Schichtplanners, aus der Datenbank ausliest, siehe _Anhang 4: Main Query_.
 
 __Implementierung Authentifizierung und Autorisierung:__
 
-Um Authentifizierung zu implementieren wurde der Gem _Devise_ gewählt. Dieser ist in der Rubycommunity sehr weiter verbreitet und bietet eine große Anzahl an Features. Um dafür zu sorgen das nicht jede Nutzer auch Daten erstellen, bearbeiten und löschen wurde die Autorisierung mithilfe von _CanCanCan_ integriert.
+Um Authentifizierung zu implementieren wurde der Gem _Devise_ gewählt. Dieser ist in der Rubycommunity sehr weit verbreitet und bietet eine große Anzahl an Features. Um dafür zu sorgen das nicht jede Nutzer auch Daten erstellen, bearbeiten und löschen wurde die Autorisierung mithilfe von _CanCanCan_ integriert.
 
 __Implementierung von erstellen und aktualisieren von Schichten:__
 
-Das aktualisieren und erstellen von Schichten soll auf die gleiche Art und Weise geschehen. Die zu bearbeitenden Schichten werden durch das gedrückt halten der linken Maustaste ausgewählt. Ausgewählte Schichten sind durch eine andere Hintergrundfarbe hervorgehoben. Durch einen weiteren Klick auf die bereits ausgewählten Schichten öffnet sich ein Popup (Modal), innerhalb dessen werden alle Möglichen Möglichen Schichten angezeigt. Mit dem Klick auf die neue Schicht werden alle zuvor markierten Schichten aktualisiert und die Hintergrundfarbe wird auf die Standardfarbe zurück gesetzt.
+Das aktualisieren und zuweisen von Schichten soll auf die selbe Weise geschehen. Die zu bearbeitenden Schichten werden durch das gedrückt halten der linken Maustaste ausgewählt. Ausgewählte Schichten sind durch eine andere Hintergrundfarbe hervorgehoben. Durch einen weiteren Klick auf die bereits ausgewählten Schichten öffnet sich ein Popup (Modal), innerhalb dessen werden alle zur Auswahl stehenden Schichten angezeigt. Mit einem Klick auf die neue Schicht werden alle zuvor markierten Schichten aktualisiert und die Hintergrundfarbe wird auf die Standardfarbe zurückgesetzt.
 
 __Implementierung der Filter für die Schichttabelle:__
 
@@ -361,19 +361,19 @@ AngularJS kommt von Haus aus schon mit dem Prinzip der Filter. Diese werden übe
  <tr ng-repeat="(i, person) in dept.people | peopleFilter:filter.criteria">
 ```
 
-Mit `dept.people` sind die Informationen aller dazustellenden Personen. Mit Hilfe von `ng-repeat` wird über das Array iteriert und jede Zeile der Tabelle erstellt.
+Mit `dept.people` enthält die Informationen aller dazustellenden Personen. Mit Hilfe von `ng-repeat` wird über das Array iteriert und jeweils ein Zeile pro Person erstellt.
 Nach der Pipe kommt der Name des Filters der angewendet werden soll und nach dem Doppelpunkt kommen die Daten die an den Filter übergeben werden. `filter.criteria` verändert sich durch das setzen der Filteroptionen, wodurch dann der Inhalt der Tabelle beeinflusst wird.
 
-__Implementierung von erstellen, bearbeiten und löschen Personen, Rollen:__
+__Implementierung von erstellen, bearbeiten und löschen von Personen, Rollen usw.:__
 
-Für jede Operation aller Datensätze soll eine extra Seite zur Verfügung stehen. Erreichbar sind diese Operationen über die Einstellungen.
-Es werden mithilfe von Bootstrap simple html Formulare erstellt. Die eingebenen Daten werden dann in AngularJS validiert und dann über die API an die Datenbank übermittelt.
+Für jede Operation aller Datensätze soll eine extra Seite zur Verfügung stehen. Erreichbar sind diese Operationen über das Einstellungsmenu.
+Es werden mithilfe von Bootstrap simple html-Formulare erstellt. Die eingebenen Daten werden dann in AngularJS validiert und dann über die API an die Datenbank übermittelt.
 
 ####5.4 Implementierung der Benutzeroberfläche
 
 Die GUI wurde auf Basis der angefertigten Mockups implementiert. Um einen konsequentes Aussehen und eine einfache Umsetzung zu gewährleisten wurde dabei auf Bootstrap als CSS-Framework gesetzt. Dieses bietet uns dank dem Grid-System eine einfach Möglichkeit unsere Objekte zu organisieren. Desweiteren gibt es fertige Lösungen für Dropdownmenus, Modals und Akkordions. 
 Komponenten die Javascript benötigen, setzen allerdings alle jQuery voraus. Da AngularJS mit einer abgespeckten Version von jQuery, namens jqLite, daherkommt, möchten wir auf jQuery verzichten. Aus diesem Grund greifen wir auf angular-bootstrap zurück.
-In dieser vom Angular Team gepflegten Bibliothek wurden alle Bootstrapkomponenten die Javascript benötigen in Angular neu geschrieben.
+In dieser, vom Angular Team gepflegten Bibliothek, wurden alle Bootstrapkomponenten die Javascript benötigen in Angular neu geschrieben.
 
 ##6 Abnahme- und Einführungsphase
 
@@ -392,13 +392,13 @@ kommt später
 ##7 Dokumentation
 
 Zum erstellen der Projektdokumentation wurde _Markdown_ als 'markup language' verwendet.
-Es bietet die Möglichkeit sehr einfach grundlegende Textformationen durchzuführen und lässt sich ohne Probleme in html oder pdf übersetzen.
+Es bietet die Möglichkeit sehr einfach grundlegende Textformatierung durchzuführen und lässt sich ohne Probleme in html übersetzen.
 
 Desweiteren wurde auch die Projektdokumentation mit Git versioniert und auf Github gehostet. Das führte auch dazu das die Dokumentation online mit dem Githubtexteditor bearbeitet werden konnte.
 
 Um eine ansprechende PDF zu erstellen wurde das Dokument am Ende noch einmal in Google Docs übertragen.
 
-Bei der Erstellung des Schichtplanners wurde großen Wert auf eine einfache und selbsterklärende Benutzung, trotzdem wurde die Anwendung für die Mitarbeiter dokumentiert. Aus diesem Grund wurde ein Artikel im internen Wiki erstellt. Dieser erklärt kurz alle Features und wie sie benutzt werden können.
+Bei der Erstellung des Schichtplanners wurde großen Wert auf eine einfache und selbsterklärende Benutzung gelegt, trotzdem sollte die Anwendung für die Mitarbeiter dokumentiert werden. Aus diesem Grund wurde ein Artikel im internen Wiki erstellt. Dieser erklärt kurz alle Features und wie sie benutzt werden können.
 
 ##8 Fazit
 
@@ -435,11 +435,11 @@ Hinzukommt das verbesserte Verständis von Test Driven Development in Rails, bes
 
 ####8.3 Ausblick
 
-Da es sich bei der Anwendung um eine MVP (minimum valuable product) handelt, ist noch viel Raum für weitere Funktionen. Die Umsetzung von TDD und CI kommen der kontinuierlichen Weiterentwicklung der Anwendung entgegen.
+Da es sich bei der Anwendung um ein MVP (minimum valuable product) handelt, ist noch viel Raum für weitere Funktionen. Die Umsetzung von TDD und CI kommen der kontinuierlichen Weiterentwicklung der Anwendung entgegen.
 
-Denkbare Features wären eine Art Dashboard, wo man sich z.B. sehen kann wer wie oft welche Schicht hatte.
-Eine Idee ist auch das die Schichten automatisch erstellt werden, indem für jede Person Regeln festgelegt werden. Zum Beispiel könnte eine Regel so aussehen das eine Person 20% Spätschicht, 50% Mittelschicht und 30% Frühschicht hat. Ein  würde dann allen Personen automatisch ihre Schichten zuordnen. Dadurch würde sich der administrationsaufwand für die Teamleiter erheblich verringern.
-Wenn man das ganze noch einen Schritt weiter nehmen würde könnten die Mitarbeiter die geänderten Schichten beantragen und der Teamleiter würde es nur noch genehmigen oder es würde sogar automatisch übernommen werden, wenn die Änderung den Regeln entspricht.
+Denkbare Features wären eine Art Dashboard, wo man z.B. sehen kann wer wie oft welche Schicht hatte.
+Eine Idee ist auch das die Schichten automatisch erstellt werden, indem für jede Person Regeln festgelegt werden. Zum Beispiel könnte eine Regel so aussehen das eine Person 20% Spätschicht, 50% Mittelschicht und 30% Frühschicht hat. Ein Algorithmus würde dann allen Personen automatisch ihre Schichten zuordnen. Dadurch würde sich der Administrationsaufwand für die Teamleiter erheblich verringern.
+Wenn man das ganze noch einen Schritt weiter nehmen würde, könnten die Mitarbeiter die geänderten Schichten beantragen und der Teamleiter würde es nur noch genehmigen oder es würde sogar automatisch übernommen werden, wenn die Änderung den Regeln entspricht.
 
 
 ##Anhang:
@@ -493,7 +493,7 @@ __Software:__
 __Personal:__
 
 - Entwickler - Umsetzung des Projektes
-- Teamlead von Customer Care - UI and UX Feedback
+- Teamleiter von Customer Care - UI and UX Feedback
 
 ####Anhang 3: Auszug des Lastenheftes
 
@@ -571,6 +571,8 @@ todo
 todo
 
 ####Anhang 7: JSON-response
+
+Die Antwort der API für die Schichtansicht sieht z.B. so aus:
 
 ```json
 [

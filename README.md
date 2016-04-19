@@ -1,7 +1,8 @@
 #IHK project documentation
 
 todo:
--iwo noch ein satz über commit messages reinhaun
+- iwo noch ein satz über commit messages reinhaun
+- add all routes to anhang
 
 ### 1 Einleitung
 
@@ -68,4 +69,6 @@ todo:
 - [x] Anhang 7: JSON-response
 - [ ] Anhang 8: Pflichtenheft
 - [x] Anhang 9: Iterationsplan
+- [ ] Anhang 10: Screenshot vom alten Schichtplanner
+- [ ] Anhang 11: Screenshot vom neuen Schichtplanner
 
