@@ -331,7 +331,6 @@ class CreatePerson < ActiveRecord::Migration[5.0]
     end
   end
 end
-
 ```
 
 Nach ausführen von `rails db:migrate` wird dieser Code von ActiveRecord in das SQL für die jeweilige Datenbank übersetzt, in unserem Fall PostgreSQL, und ausgeführt. Diese Form der Datenbankverwaltung hat den Vorteil das wir immer eine Primärschlüssel haben der `id` heißt und sich automatisch erhöht, desweiteren haben wir immer die Felder created_at und updated_at die autmatisch von Rails verwaltet werden.
@@ -360,7 +359,7 @@ AngularJS kommt von Haus aus schon mit dem Prinzip der Filter. Diese werden übe
 
 ```html
  <tr ng-repeat="(i, person) in dept.people | peopleFilter:filter.criteria">
- ```
+```
 
 Mit `dept.people` sind die Informationen aller dazustellenden Personen. Mit Hilfe von `ng-repeat` wird über das Array iteriert und jede Zeile der Tabelle erstellt.
 Nach der Pipe kommt der Name des Filters der angewendet werden soll und nach dem Doppelpunkt kommen die Daten die an den Filter übergeben werden. `filter.criteria` verändert sich durch das setzen der Filteroptionen, wodurch dann der Inhalt der Tabelle beeinflusst wird.
@@ -402,6 +401,31 @@ Bei der Erstellung des Schichtplanners wurde großen Wert auf eine einfache und 
 ##8 Fazit
 
 ####8.1 Soll-/Ist-Vergleich
+
+Zum Ende hin kann gesagt werden das alle im Pflichtenheft festgelegten Vorgaben erfüllt wurden und der vorgegene Zeitrahmen von 70 Stunden lediglich um 1 Stunde überschritten wurde. Grundsätzlich wurde für die Analyse, Entwurf und Dokumentation etwas zu viel eingeplant. Die Integration des Frontends und die Einrichtung des CI Workflows nahmen hingegegen deutlich mehr Zeit in Anspruch als geplant. Diese Diskrepanz ist darauf zurückzuführen das der Autor mit den verwendeten Tools noch nicht sehr vertraut war.
+
+Projektphase | geplante Zeit (in Stunden) | genutzte Zeit (in Stunden) | Differenz (in Stunden)
+-------------|--------------------------- | -------------------------- | 
+__Analyse__ | __5__ | __4,5__ | __-0,5__
+Ist-Analyse | 1  | 1 | 0
+Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung | 1 | 0,5 | -0,5
+Ermittlung von Use-Cases | 1 | 1 | 0
+Unterstützung bei der Erstellung des Lastenhefts | 2 | 2 | 0
+__Entwurf__ | __8__ | __6,5__ | __-1,5__
+Erstellung eines ER-Model | 1 | 1 | 0
+Entwurf der API | 1 | 0,5 | -0,5
+Mockups für das Frontend | 2 | 1 | -1
+Erstellung eines Pflichtenheftes | 4 | 4 | 0
+__Implementierung__ | __37__ | __38__ | __+1__
+Implementierung der API | 12 | 10 | -2
+Implementierung des Frontends | 25 | 28 | +3
+__Deployment__ | __10__ | __12__ | __+2__
+Aufsetzen des Server | 2 | 1 | -1
+Einrichtung des Coninuous Integration-Prozesses | 8 | 11 | +3
+__Dokumentation__ | __10__ |  __9__ | __-1__
+Erstellen der Projektdokumentation | 10 | 9  | -1
+__gesamt:__ | __70__ | __71__ | __+1__
+
 ####8.2 Lessons Learned
 ####8.3 Ausblick
 
@@ -416,13 +440,13 @@ Ist-Analyse | 1
 Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung | 1
 Ermittlung von Use-Cases | 1
 Unterstützung bei der Erstellung des Lastenhefts | 2
-__Entwurf__ | __10__
+__Entwurf__ | __8__
 Erstellung eines ER-Model | 1
-Entwurf der API | 2
-Markup für das Frontend | 3
+Entwurf der API | 1
+Mockups für das Frontend | 2
 Erstellung eines Pflichtenheftes | 4
-__Implementierung__ | __35__
-Implementierung der API | 10
+__Implementierung__ | __37__
+Implementierung der API | 12
 Implementierung des Frontends | 25
 __Deployment__ | __10__
 Aufsetzen des Server | 2

@@ -53,7 +53,7 @@ todo:
 
 ### 8 Fazit
 
-- [ ]  8.1 Soll-/Ist-Vergleich
+- [x]  8.1 Soll-/Ist-Vergleich
 - [ ]  8.2 Lessons Learned
 - [ ]  8.3 Ausblick
 
