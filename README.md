@@ -54,14 +54,14 @@ todo:
 ### 8 Fazit
 
 - [x]  8.1 Soll-/Ist-Vergleich
-- [ ]  8.2 Lessons Learned
-- [ ]  8.3 Ausblick
+- [x]  8.2 Lessons Learned
+- [x]  8.3 Ausblick
 
 ##Anhang:
 
 - [x] Anhang 1: Detaillierte Zeitplanung
 - [x] Anhang 2: Verwendete Ressourcen
-- [ ] Anhang 3: Auszug des Lastenheftes
+- [x] Anhang 3: Auszug des Lastenheftes
 - [x] Anhang 4: Main Query
 - [ ] Anhang 5: GUI Mockup
 - [ ] Anhang 6: ER-Model

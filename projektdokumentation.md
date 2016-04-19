@@ -431,14 +431,14 @@ __gesamt:__ | __70__ | __71__ | __+1__
 ####8.2 Lessons Learned
 
 Grundsätzlich konnte der Autor sein Wissen und seine Erfahrung im Projektmanagement deutlich verbessern.
-Hinzukommt das verbesserte Verständis von Test Driven Development in Rails, besseres allgemeines Verständnis von AngularJS, vertieftes Wissen von PostgreSQL und komplexen SQL-queries und mehr praktische Erfahrung beim Erstellen eines Continious-Integration-Workflows.
+Hinzukommt das verbesserte Verständis von Test Driven Development in Rails, besseres allgemeines Verständnis von AngularJS, vertieftes Wissen von PostgreSQL und komplexen SQL-queries und mehr praktische Erfahrung beim erstellen eines Continious-Integration-Workflows.
 
 ####8.3 Ausblick
 
-Da es sich bei der Anwendung um eine MVP (minimum valuable product) handelt, ist noch viel Raum für weiter Funktionen. Die Umsetzung von TDD und CI kommen der kontinuierlichen Entwicklung der Anwendung entgegen.
+Da es sich bei der Anwendung um eine MVP (minimum valuable product) handelt, ist noch viel Raum für weitere Funktionen. Die Umsetzung von TDD und CI kommen der kontinuierlichen Weiterentwicklung der Anwendung entgegen.
 
-Denkbare Features wären eine Art Dashboard, wo man sich z.B. angucken kann wer wie oft welche Schicht hat.
-Eine Idee ist auch das die Schichten automatisch erstellt werden, indem für jede Person Regeln festgelegt werden. Zum Beispiel könnte eine Regel so aussehen das eine Person 20% Spätschicht, 50% Mittelschicht und 30% Frühschicht hat. Ein Algorythmus würde dann allen Personen automatisch ihre Schichten zuordnen. Dadurch würde sich der administrationsaufwand für die Teamleiter erheblich verringern.
+Denkbare Features wären eine Art Dashboard, wo man sich z.B. sehen kann wer wie oft welche Schicht hatte.
+Eine Idee ist auch das die Schichten automatisch erstellt werden, indem für jede Person Regeln festgelegt werden. Zum Beispiel könnte eine Regel so aussehen das eine Person 20% Spätschicht, 50% Mittelschicht und 30% Frühschicht hat. Ein  würde dann allen Personen automatisch ihre Schichten zuordnen. Dadurch würde sich der administrationsaufwand für die Teamleiter erheblich verringern.
 Wenn man das ganze noch einen Schritt weiter nehmen würde könnten die Mitarbeiter die geänderten Schichten beantragen und der Teamleiter würde es nur noch genehmigen oder es würde sogar automatisch übernommen werden, wenn die Änderung den Regeln entspricht.
 
 
@@ -497,13 +497,15 @@ __Personal:__
 
 ####Anhang 3: Auszug des Lastenheftes
 
-auszug lastenheft
+Die Anwendung soll folgende Kriterien erfüllen:
 
-Anforderungen:
-- a
-- b
-- c
-- d
+- übersichtliche Darstellung aller Personen und ihrer Schichten in einer Abteilung in einer Woche
+- Möglichkeit die Personen einer anderen Abteilung zu betrachten
+- Möglichkeit die letzte bzw. nächste Woche zu betrachten
+- Möglichkeit über Auswahl von Checkboxen nach Rolle, Sprache, Fähigkeit und/ oder Schicht zu filtern
+- Möglichkeit über die Eingabe von Text nach dem Namen zu filtern
+- Möglichkeit innerhalb der Schichtansicht neue Schichten zu erstellen und bestehende zu bearbeiten
+- Möglichkeit in einer extra Ansicht Personen, Rollen, Sprachen, Fähigkeiten, Schichten, Schichttypen und Abteilungen zu erstellen, bearbeiten oder löschen.
 
 ####Anhang 4: Main Query
 
