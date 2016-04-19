@@ -1,5 +1,8 @@
 #IHK project documentation
 
+todo:
+-iwo noch ein satz über commit messages reinhaun
+
 ### 1 Einleitung
 
 - [x] 1.1. Projektbeschreibung

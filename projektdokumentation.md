@@ -334,7 +334,7 @@ end
 
 ```
 
-Nach ausführen von `rails db:migrate` wird dieser Code von ActiveRecord in das SQL für die jeweilige Datenbank übersetzt, in unserem Fall PostgreSQL, und ausgeführt. Diese Form der Datenbankerstellung hat den Vorteil das wir immer eine Primärschlüssel haben der `id` heißt und sich automatisch erhöht, desweiteren haben wir immer die Felder created_at und updated_at die autmatisch von Rails verwaltet werden.
+Nach ausführen von `rails db:migrate` wird dieser Code von ActiveRecord in das SQL für die jeweilige Datenbank übersetzt, in unserem Fall PostgreSQL, und ausgeführt. Diese Form der Datenbankverwaltung hat den Vorteil das wir immer eine Primärschlüssel haben der `id` heißt und sich automatisch erhöht, desweiteren haben wir immer die Felder created_at und updated_at die autmatisch von Rails verwaltet werden.
 
 ####5.3 Implementierung der Geschäftslogik
 
@@ -367,18 +367,28 @@ Nach der Pipe kommt der Name des Filters der angewendet werden soll und nach dem
 
 __Implementierung von erstellen, bearbeiten und löschen Personen, Rollen:__
 
-Für jede Operation aller Datensätze soll eine extra Seite zur Verfügung stellen. Erreichbar sind diese Operationen über die Einstellungen.
+Für jede Operation aller Datensätze soll eine extra Seite zur Verfügung stehen. Erreichbar sind diese Operationen über die Einstellungen.
 Es werden mithilfe von Bootstrap simple html Formulare erstellt. Die eingebenen Daten werden dann in AngularJS validiert und dann über die API an die Datenbank übermittelt.
 
 ####5.4 Implementierung der Benutzeroberfläche
 
-Die GUI wurde auf Basis der angefertigten Mockups implementiert. Um einen konsequentes Aussehen und eine einfache Umsetzung zu gewährleisten wurde dabei auf Bootstrap als CSS-Framework gesetzt. Dieses bietet uns dank dem Grid-System eine einfach Möglichkeit unsere Objekte zu organisieren. Desweiteren gibt es fertige Lösungen für Dropdownmenus, Modals oder Akkordions. Komponenten die Javascript benötigen, setzen allerdings alle jQuery voraus. Da AngularJS mit einer abgespeckten Version von jQuery, namens jqLite, daherkommt, möchten wir auf jQuery verzichten. Aus diesem Grund greifen wir auf angular-bootstrap zurück.
+Die GUI wurde auf Basis der angefertigten Mockups implementiert. Um einen konsequentes Aussehen und eine einfache Umsetzung zu gewährleisten wurde dabei auf Bootstrap als CSS-Framework gesetzt. Dieses bietet uns dank dem Grid-System eine einfach Möglichkeit unsere Objekte zu organisieren. Desweiteren gibt es fertige Lösungen für Dropdownmenus, Modals und Akkordions. 
+Komponenten die Javascript benötigen, setzen allerdings alle jQuery voraus. Da AngularJS mit einer abgespeckten Version von jQuery, namens jqLite, daherkommt, möchten wir auf jQuery verzichten. Aus diesem Grund greifen wir auf angular-bootstrap zurück.
 In dieser vom Angular Team gepflegten Bibliothek wurden alle Bootstrapkomponenten die Javascript benötigen in Angular neu geschrieben.
 
 ##6 Abnahme- und Einführungsphase
 
-####6.1 Abnahme durch den Fachbereich
+####6.1 Abnahme durch den Ausbilder
+
+Nach Abschluss der Implementierungsphase wurde die Anwendung vom Ausbilder abgenommen und geprüft ob alle im Pflichtenheft festgelegten Anforderungen erfüllt wurden.
+Durch den agilen Entwicklungsprozess war der Ausbilder bereits mit der Anwendung vertraut, was die Abnahme deutlich beschleunigte.
+
 ####6.2 Deployment und Einführung
+
+kommt später
+-ansible
+-kubernetes
+-jenkins etc
 
 ##7 Dokumentation
 
