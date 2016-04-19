@@ -396,34 +396,36 @@ Es bietet die Möglichkeit sehr einfach grundlegende Textformationen durchzufüh
 
 Desweiteren wurde auch die Projektdokumentation mit Git versioniert und auf Github gehostet. Das führte auch dazu das die Dokumentation online mit dem Githubtexteditor bearbeitet werden konnte.
 
+Um eine ansprechende PDF zu erstellen wurde das Dokument am Ende noch einmal in Google Docs übertragen.
+
 Bei der Erstellung des Schichtplanners wurde großen Wert auf eine einfache und selbsterklärende Benutzung, trotzdem wurde die Anwendung für die Mitarbeiter dokumentiert. Aus diesem Grund wurde ein Artikel im internen Wiki erstellt. Dieser erklärt kurz alle Features und wie sie benutzt werden können.
 
 ##8 Fazit
 
 ####8.1 Soll-/Ist-Vergleich
 
-Zum Ende hin kann gesagt werden das alle im Pflichtenheft festgelegten Vorgaben erfüllt wurden und der vorgegene Zeitrahmen von 70 Stunden lediglich um 1 Stunde überschritten wurde. Grundsätzlich wurde für die Analyse, Entwurf und Dokumentation etwas zu viel eingeplant. Die Integration des Frontends und die Einrichtung des CI Workflows nahmen hingegegen deutlich mehr Zeit in Anspruch als geplant. Diese Diskrepanz ist darauf zurückzuführen das der Autor mit den verwendeten Tools noch nicht sehr vertraut war.
+Zum Ende hin kann gesagt werden das alle im Pflichtenheft festgelegten Vorgaben erfüllt wurden und der vorgegene Zeitrahmen von 70 Stunden lediglich um 1 Stunde überschritten wurde. Grundsätzlich wurde für die Analyse, Entwurf etwas zu viel eingeplant. Die Integration des Frontends und die Einrichtung des CI Workflows nahmen hingegegen deutlich mehr Zeit in Anspruch als geplant. Diese Diskrepanz ist darauf zurückzuführen das der Autor mit den verwendeten Tools noch nicht sehr vertraut war.
 
 Projektphase | geplante Zeit (in Stunden) | genutzte Zeit (in Stunden) | Differenz (in Stunden)
--------------|--------------------------- | -------------------------- | 
-__Analyse__ | __5__ | __4,5__ | __-0,5__
+-------------|--------------------------- | -------------------------- | ---------------------
+__Analyse__ | __5__ | __3,5__ | __-1,5__
 Ist-Analyse | 1  | 1 | 0
 Durchführung einer Wirtschaftlichkeitsanalyse und Amortisationsrechnung | 1 | 0,5 | -0,5
 Ermittlung von Use-Cases | 1 | 1 | 0
-Unterstützung bei der Erstellung des Lastenhefts | 2 | 2 | 0
-__Entwurf__ | __8__ | __6,5__ | __-1,5__
+Unterstützung bei der Erstellung des Lastenhefts | 2 | 1 | -1
+__Entwurf__ | __8__ | __5,5__ | __-2,5__
 Erstellung eines ER-Model | 1 | 1 | 0
 Entwurf der API | 1 | 0,5 | -0,5
 Mockups für das Frontend | 2 | 1 | -1
-Erstellung eines Pflichtenheftes | 4 | 4 | 0
+Erstellung eines Pflichtenheftes | 4 | 3 | -1
 __Implementierung__ | __37__ | __38__ | __+1__
 Implementierung der API | 12 | 10 | -2
 Implementierung des Frontends | 25 | 28 | +3
 __Deployment__ | __10__ | __12__ | __+2__
 Aufsetzen des Server | 2 | 1 | -1
 Einrichtung des Coninuous Integration-Prozesses | 8 | 11 | +3
-__Dokumentation__ | __10__ |  __9__ | __-1__
-Erstellen der Projektdokumentation | 10 | 9  | -1
+__Dokumentation__ | __10__ |  __12__ | __-1__
+Erstellen der Projektdokumentation | 10 | 12  | +2
 __gesamt:__ | __70__ | __71__ | __+1__
 
 ####8.2 Lessons Learned
