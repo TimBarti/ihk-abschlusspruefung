@@ -227,7 +227,9 @@ Aus diesem Grund kann das Projekt aus wirtschaftlichen Gesichtspunten als sehr l
 
 ####3.3 Anwendungsfälle
 
-kommt später
+Es gibt 2 unterschiedliche Nutzer, die Mitarbeiter und die Teamleiter. Beide benutzen den Schichtplanner um Schichten zu betrachten und ggf. die Ansicht zu Filtern.
+Lediglich die Teamleiter haben die Möglichkeit Schichten zuzuweisen. Desweiteren können sie neue Datensätze erstellen oder bestehende bearbeiten. Bei diesen Vorgängen wird jeweils die Validität der Daten überprüft.
+Teamleiter können auch Datensätze löschen, vor dem löschen soll der Nutzer jedoch nochmal gefragt werden ob die Daten wirklich gelöscht werden sollen.
 
 ####3.4 Lastenheft / Fachkonzept
 
@@ -502,6 +504,7 @@ __Software:__
 
 - Xubuntu 14.04
 - Sublime Text 3
+- Violet UML Creator
 - Firefox
 - Rails 5.0
 - Angular 1
@@ -660,7 +663,11 @@ Die Antwort der API für die Schichtansicht sieht z.B. so aus:
 
 ####Anhang 8: Pflichtenheft
 
-todo
+Der Auszug des Pflichtenhefts wird die Umsetzung definiert.
+
+__Umsetzung der Anforderungen__
+
+
 
 ####Anhang 9: Iterationsplan
 
@@ -765,3 +772,35 @@ FROM (SELECT (SELECT json_agg(roles) AS roles
                            GROUP BY sh.shift_type_id)
                      ) as shifts)) as result
 ```
+
+####Anhang 14: Use-Case Description
+
+__Benutzer__
+
+- normaler Mitarbeiter
+- Teamleiter
+
+__Vorraussetzungen__
+
+- internetfähiges Gerät
+- Webbrowser installiert
+- Zugang zum Internet
+
+__Ziele__
+
+- betrachten einer bestimmten Schicht
+- zuweisen einer Schicht
+- aktualisieren oder erstellen einer Person, Schicht, Abteilung, Sprache, Rolle, Fähigkeit oder eines Schichttypen
+- löschen einer Person, Schicht, Abteilung, Sprache, Rolle, Fähigkeit oder eines Schichttypen
+
+__führt zum Fehlschlag__
+
+- eigegebene Daten entschprechen nicht den Regeln
+
+__Erweiterungen__
+
+- Fehlermeldung
+
+####Anhang 15: Use-Case Diagram
+
+atm in extra file

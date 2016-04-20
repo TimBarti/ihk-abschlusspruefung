@@ -70,3 +70,5 @@
 - [ ] Anhang 11: Screenshot vom neuen Schichtplanner
 - [x] Anhang 12: alle API-Calls
 - [x] Anhang 13: SQL-query für alle Filterkriterien
+- [x] Anhang 14: Use-Case Description
+- [x] Anhang 15: Use-Case Diagram
