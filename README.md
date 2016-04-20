@@ -1,9 +1,5 @@
 #IHK project documentation
 
-todo:
-- iwo noch ein satz über commit messages reinhaun
-- add all routes to anhang
-
 ### 1 Einleitung
 
 - [x] 1.1. Projektbeschreibung

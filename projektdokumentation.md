@@ -268,7 +268,7 @@ Da für die Hauptansicht 6 verschiedene Tabellen abgefragt werden, wird dafür a
 
 Grundsätzlich gibt es für jede Datenbanktabelle 5 API-Calls. Eine Übersicht über alle API-Calls finden Sie im _Anhang 12: API-Calls_. 
 
-Der Index-Call gibt alle Daten der Tabelle wieder, zum Beispiel alle Abteilungen. Die Index-Calls für die Schichten und die Personen wurden weggelassen, da diese aufgrund der großen Anzahl an Daten zu lange dauern würden (375500 Schichten) und es gibt kein Anwendungsszenario für diese Calls. 
+Der Index-Call gibt alle Daten der Tabelle wieder, zum Beispiel alle Abteilungen. Die Index-Calls für die Schichten und die Personen wurden weggelassen, da diese aufgrund der großen Anzahl an Daten zu lange dauern würden (377500 Schichten) und es gibt kein Anwendungsszenario für diese Calls. 
 
 Dem Show-Call gibt immer exakt einen Datensatz zurück, um diesen zu identifizieren wird immer eine ID als Parameter übergeben. Eine Ausnahme bildet hier wieder der Call für eine spezifische Abteilung, denn wir möchten nicht nur alle Personen in einer Abteilung, sondern auch die Schichten eine spezifischen Woche. Aus diesem Grund wird auch immer eine Woche als Integer übergeben. Die Woche 0 ist immer die aktuelle Woche und negative Wochen sind die vergangenen.
 
@@ -350,7 +350,14 @@ Nach ausführen von `rails db:migrate` wird dieser Code von ActiveRecord in das 
 
 Im folgenden soll der Prozess der Implementierung erläutert werden. Als erstes wird jedoch das allgemeine Setup vorgestellt werden. Da es sich bei Ruby und Javascript und Skriptsprachen handelt wurde auf eine IDE verzichtet und stattdessen der gesamte Code mit einem Text Editor erstellt und bearbeitet. Aufgrund seiner zahlreichen Features und Erweiterbarkeit durch Plugins ist die Wahl auf Sublime Text 3 gefallen.
 Der Code wurde mithilfe von Git versioniert, das bietet den Vorteil nach einem Fehler einfach auf einer frühere, funktionierende Version zurück gewechselt werden kann. Desweiteren gibt es die Möglichkeit neue Features in einem extra Branch zu entwickeln, dadurch hat man immer einen stabile Version.
-Aufgrund seiner Popularität wurde Github als Host für das Repository gewählt. Desweiteren erhält man dadurch die Möglichkeit ohne Probleme das Projekt auf einem anderen PC zu clonen bzw. bei einem neuen Release es von Github zu pullen. Gemäß dem Iterationsplan wurde als erstes die die Railsapp erstellt.
+
+Um die Weiterentwicklung und Fehlersuche zu vereinfachen wurde großer Wert auf sinnvolle commit messages gelegt.
+Der Header ist maximal 50 Zeichen lang und fängt immer mit einem Großbuchstaben an.
+Der Body der Commit-Message ist durch eine Leerzeile getrennt und erklärt was und warum etwas gemacht wurde, statt zu erklären wie es gemacht wurde.
+
+Aufgrund seiner Popularität und des kostenlosen Angebots wurde Github als Host für das Repository gewählt. Desweiteren erhält man dadurch die Möglichkeit ohne Probleme das Projekt auf einem anderen PC zu clonen bzw. bei einem neuen Release es von Github zu pullen. 
+
+Gemäß dem Iterationsplan wurde als erstes die die Railsapp erstellt.
 
 __Erstellen der Railsapp mit Datenbankstruktur & aller API-Calls:__
 
