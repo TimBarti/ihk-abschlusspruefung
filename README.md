@@ -68,4 +68,5 @@
 - [x] Anhang 9: Iterationsplan
 - [ ] Anhang 10: Screenshot vom alten Schichtplanner
 - [ ] Anhang 11: Screenshot vom neuen Schichtplanner
-
+- [x] Anhang 12: alle API-Calls
+- [x] Anhang 13: SQL-query für alle Filterkriterien

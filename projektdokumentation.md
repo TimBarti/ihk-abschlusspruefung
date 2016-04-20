@@ -266,13 +266,18 @@ Da für die Hauptansicht 6 verschiedene Tabellen abgefragt werden, wird dafür a
 
 ####4.3 Entwurf der API
 
-Grundsätzlich gibt es für jede Datenbanktabelle 5 API-Calls. Eine Übersicht über alle API-Calls finden Sie im _Anhang 12: API-Calls_. 
+Grundsätzlich gibt es für jede Datenbanktabelle 5 API-Aufruf. Eine Übersicht über alle API-Aufruf finden Sie im _Anhang 12: API-Aufruf_. 
 
-Der Index-Call gibt alle Daten der Tabelle wieder, zum Beispiel alle Abteilungen. Die Index-Calls für die Schichten und die Personen wurden weggelassen, da diese aufgrund der großen Anzahl an Daten zu lange dauern würden (377500 Schichten) und es gibt kein Anwendungsszenario für diese Calls. 
+Der Index-Call gibt alle Daten der Tabelle wieder, zum Beispiel alle Abteilungen. Die Index-Aufruf für die Schichten und die Personen wurden weggelassen, da diese aufgrund der großen Anzahl an Daten zu lange dauern würden (377500 Schichten) und es gibt kein Anwendungsszenario für diese Aufruf. 
 
 Dem Show-Call gibt immer exakt einen Datensatz zurück, um diesen zu identifizieren wird immer eine ID als Parameter übergeben. Eine Ausnahme bildet hier wieder der Call für eine spezifische Abteilung, denn wir möchten nicht nur alle Personen in einer Abteilung, sondern auch die Schichten eine spezifischen Woche. Aus diesem Grund wird auch immer eine Woche als Integer übergeben. Die Woche 0 ist immer die aktuelle Woche und negative Wochen sind die vergangenen.
 
-Die Update-, Create- und Delete-Calls sind selbsterklärend und bei allen Attributen vorhanden.
+Die Update-, Create- und Delete-Aufruf sind selbsterklärend und bei allen Attributen vorhanden.
+
+Für die Filter müssen alle Abteilungen, Rollen, Sprachen, Fähigkeiten und Schichttypen abgefragt werden. Um zu verhindern das jedes mal 5 API-Aufrufe getätigt werden müssen wurde ein extra API-Aufruf eingeführt `/api/people_filter_criteria/:dept_id/week/:week`, dieser gibt alle nötigen Informationen mit einem mal zurück.
+Um die Filterkriterien übersichtlich zu halten sollten nur die Schichttypen berücksichtigt werden, die auch tatsächlich innerhalb der Woche auftreten.
+
+Das zuständige SQL-query ist im _Anhang 13: SQL-query für alle Filterkriterien_ zu finden.
 
 ####4.4 Entwurf der Benutzeroberfläche
 
@@ -409,7 +414,7 @@ kommt später
 
 ##7 Dokumentation
 
-Zum erstellen der Projektdokumentation wurde _Markdown_ als 'markup language' verwendet.
+Zum erstellen der Projektdokumentation wurde _Markdown_ als markup language verwendet.
 Es bietet die Möglichkeit sehr einfach grundlegende Textformatierung durchzuführen und lässt sich ohne Probleme in html übersetzen.
 
 Desweiteren wurde auch die Projektdokumentation mit Git versioniert und auf Github gehostet. Das führte auch dazu das die Dokumentation online mit dem Githubtexteditor bearbeitet werden konnte.
@@ -445,6 +450,8 @@ Einrichtung des Coninuous Integration-Prozesses | 8 | 11 | +3
 __Dokumentation__ | __10__ |  __12__ | __+2__
 Erstellen der Projektdokumentation | 10 | 12  | +2
 __gesamt:__ | __70__ | __71__ | __+1__
+
+_Tabelle 3: Soll- /Ist-Vergleich_
 
 ####8.2 Lessons Learned
 
@@ -702,3 +709,59 @@ todo
  DELETE | /api/roles/:id                                  | roles#destroy
  GET    | /api/people_filter_criteria/:dept_id/week/:week | filters#people
 
+####Anhang 13: SQL-query für alle Filterkriterien
+
+```sql
+SELECT row_to_json(result) as filter_criterias
+FROM (SELECT (SELECT json_agg(roles) AS roles
+        FROM (SELECT r.name, r.id
+              FROM roles AS r
+              WHERE r.id IN (SELECT pr.role_id
+                              FROM people_roles AS pr
+                              JOIN (SELECT p.id
+                                      FROM people AS p
+                                     WHERE p.department_id = ?
+                                   ) AS  p
+                                ON p.id = pr.person_id))
+              AS roles),
+       (SELECT json_agg(skills) AS skills
+        FROM (SELECT s.id, s.name
+              FROM skills AS s
+             WHERE s.id IN (SELECT ps.skill_id
+                              FROM people_skills AS ps
+                              JOIN (SELECT p.id
+                                      FROM people AS p
+                                     WHERE p.department_id = ?
+                                   ) AS  p
+                                ON p.id = ps.person_id
+                          GROUP BY ps.skill_id
+                          ORDER BY ps.skill_id)
+                      )
+        AS skills),
+       (SELECT json_agg(languages) as languages
+        FROM (SELECT l.id, l.name
+              FROM languages AS l
+             WHERE l.id IN (SELECT lp.language_id
+                              FROM languages_people AS lp
+                              JOIN (SELECT p.id
+                                      FROM people AS p
+                                     WHERE p.department_id = ?
+                                   ) AS  p
+                                ON p.id = lp.person_id
+                          GROUP BY lp.language_id
+                          ORDER BY lp.language_id)
+                      )
+        AS languages),
+       (SELECT json_agg(shifts) as shifts
+        FROM (SELECT st.id, st.name
+              FROM shift_types as st
+             WHERE st.id IN (SELECT sh.shift_type_id
+                               FROM shifts as sh
+                              WHERE person_id IN (SELECT p.id
+                                                    FROM people as p
+                                                   WHERE p.department_id = ?)
+                                    AND
+                                    sh.date_of_shift BETWEEN ? AND ?
+                           GROUP BY sh.shift_type_id)
+                     ) as shifts)) as result
+```
