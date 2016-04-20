@@ -31,10 +31,11 @@ todo:
 
 - [x]  4.1 Zielplattform
 - [x]  4.2 Architekturdesign
-- [x]  4.3 Entwurf der Benutzeroberfläche
-- [x]  4.4 Datenmodell
-- [x]  4.5 Geschäftslogik
-- [x]  4.6 Pflichtenheft
+- [x]  4.3 Entwurf der API
+- [x]  4.4 Entwurf der Benutzeroberfläche
+- [x]  4.5 Datenmodell
+- [x]  4.6 Geschäftslogik
+- [x]  4.7 Pflichtenheft
 
 ### 5 Implementierungsphase
 

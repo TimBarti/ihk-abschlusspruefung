@@ -29,10 +29,11 @@
 
 ##### 4.1 Zielplattform
 ##### 4.2 Architekturdesign
-##### 4.3 Entwurf der Benutzeroberfläche
-##### 4.4 Datenmodell
-##### 4.5 Geschäftslogik
-##### 4.6 Pflichtenheft
+##### 4.3 Entwurf der API
+##### 4.4 Entwurf der Benutzeroberfläche
+##### 4.5 Datenmodell
+##### 4.6 Geschäftslogik
+##### 4.7 Pflichtenheft
 
 ### 5 Implementierungsphase
 
@@ -263,7 +264,17 @@ Aufgrund diese Kriterien ist die Wahl ist auf PostgreSQL gefallen.
 
 Da für die Hauptansicht 6 verschiedene Tabellen abgefragt werden, wird dafür auf das ORM (Active Record) von Rails verzichtet und auf Postgres spezifisches SQL gesetzt, siehe _Anhang 4: Main Query_.
 
-####4.3 Entwurf der Benutzeroberfläche
+####4.3 Entwurf der API
+
+Grundsätzlich gibt es für jede Datenbanktabelle 5 API-Calls. Eine Übersicht über alle API-Calls finden Sie im _Anhang 12: API-Calls_. 
+
+Der Index-Call gibt alle Daten der Tabelle wieder, zum Beispiel alle Abteilungen. Die Index-Calls für die Schichten und die Personen wurden weggelassen, da diese aufgrund der großen Anzahl an Daten zu lange dauern würden (375500 Schichten) und es gibt kein Anwendungsszenario für diese Calls. 
+
+Dem Show-Call gibt immer exakt einen Datensatz zurück, um diesen zu identifizieren wird immer eine ID als Parameter übergeben. Eine Ausnahme bildet hier wieder der Call für eine spezifische Abteilung, denn wir möchten nicht nur alle Personen in einer Abteilung, sondern auch die Schichten eine spezifischen Woche. Aus diesem Grund wird auch immer eine Woche als Integer übergeben. Die Woche 0 ist immer die aktuelle Woche und negative Wochen sind die vergangenen.
+
+Die Update-, Create- und Delete-Calls sind selbsterklärend und bei allen Attributen vorhanden.
+
+####4.4 Entwurf der Benutzeroberfläche
 
 Der wichtigste Teil der Benutzeroberfläche ist, die Ansicht die alle Personen einer Abteilung und ihre zugehörigen Schichten in einer spezifischen Woche darstellt. Um eine bestimmte Person oder Personengruppe schnell zu finden, sollen detaillierte Filteroptionen zur Verfügung gestellt werden. Damit die Filteroptionen mit wachsender Anzahl von Kriterien nicht unübersichtlich werden, sollen die möglichen Kriterien nach Kategorie in einem Dropdownmenu gruppiert werden. Das heißt es wird die Möglichkeit geben ein andere Abteilung anzuzeigen, nach Role, Skill, Sprache und Schicht per Checkbox zu filtern und eine bestimmte Person über ihren Namen zu suchen.
 Alle Personen, ihre Attribute und Schichten werden in einer Tabelle dargestellt. Desweiteren gibt es natürlich die Möglichkeit die nächste bzw. vorherige Woche anzuzeigen. Innerhalb dieser Ansicht können lediglich die bestehenden Schichten geändert und neue zugewiesen werden.
@@ -272,7 +283,7 @@ Alle weiteren Aktionen, wie zum Beispiel das erstellen, bearbeiten und löschen 
 
 Die Mockups wurden dabei mit Stift und Papier angefertigt, siehe _Anhang 5: GUI Mockup_, und mit dem Auftraggeber abgesprochen.
 
-####4.4 Datenmodell
+####4.5 Datenmodell
 
 Um notwendigen Datentypen zu erabeiten wurde der bestehende Schichtplanner analysiert. Dadurch wurden folgende Einheiten herausgearbeitet:
 
@@ -286,7 +297,7 @@ Um notwendigen Datentypen zu erabeiten wurde der bestehende Schichtplanner analy
 
 Die Beziehungen zwischen den einzelnen Einheiten ist im _Anhang 6: ER-Model_ dargestellt.
 
-####4.5 Geschäftslogik
+####4.6 Geschäftslogik
 
 In Ruby on Rails entspricht jede Datenbanktabelle einem Model, das heißt es gibt 7 Models.
 Auf ein Model kommt mindestens ein Controller, welcher standardmäßig alle REST Aktionen abdeckt.
@@ -301,7 +312,7 @@ Um den Nutzer zu helfen valide Daten (z.B. neue Personen) zu erstellen , werden 
 Da diese Form von Validierung durch deaktiveren von Javascript umgangen werden kann, ist es essenziell das es eine serverseitige Validierung gibt.
 Um das zu gewährleisten werden Constraints direkt in PostgreSQL angelegt. Diese Lösung bietet einen Kompromiss aus valider Daten in der Datenbank und einfache Benutzbarkeit für den Nutzer. Der Nachteil ist das die Validierungen in 2 Stellen stattfindet das bedeutet, wenn sich die Validierung ändert, muss der Quellcode an 2 Stellen angepasst werden.
 
-####4.6 Pflichtenheft
+####4.7 Pflichtenheft
 
 Am Ende der Entwurfsphase wurde, basierend auf dem Lastenheft, das Pflichtenheft erstellt.
 Dieses legt die Umsetzung des Projektes fest. Einen Auszug davon befindet sich im _Anhang 8: Pflichtenheft_.
@@ -652,31 +663,35 @@ todo
 
 ####Anhang 12: alle API-Calls
 
-     Prefix | Verb   | URI Pattern                                     | Controller#Action
-------------|--------|-------------------------------------------------|---------------------
-departments | GET    | /api/departments                                | departments#index
-            | GET    | /api/departments/:id/week/:week                 | departments#show
-     people | POST   | /api/people                                     | people#create
-     person | GET    | /api/people/:id                                 | people#show
-            | PATCH  | /api/people/:id                                 | people#update
-            | PUT    | /api/people/:id                                 | people#update
-            | DELETE | /api/people/:id                                 | people#destroy
-     shifts | POST   | /api/shifts                                     | shifts#create
-      shift | GET    | /api/shifts/:id                                 | shifts#show
-            | PATCH  | /api/shifts/:id                                 | shifts#update
-            | PUT    | /api/shifts/:id                                 | shifts#update
-            | DELETE | /api/shifts/:id                                 | shifts#destroy
-shift_types | GET    | /api/shift_types                                | shift_types#index
-            | POST   | /api/shift_types                                | shift_types#create
- shift_type | GET    | /api/shift_types/:id                            | shift_types#show
-            | PATCH  | /api/shift_types/:id                            | shift_types#update
-            | PUT    | /api/shift_types/:id                            | shift_types#update
-            | DELETE | /api/shift_types/:id                            | shift_types#destroy
-      roles | GET    | /api/roles                                      | roles#index
-            | POST   | /api/roles                                      | roles#create
-       role | GET    | /api/roles/:id                                  | roles#show
-            | PATCH  | /api/roles/:id                                  | roles#update
-            | PUT    | /api/roles/:id                                  | roles#update
-            | DELETE | /api/roles/:id                                  | roles#destroy
-            | GET    | /api/people_filter_criteria/:dept_id/week/:week | filters#people
+ Verb   | URI Pattern                                     | Controller#Action
+--------|-------------------------------------------------|---------------------
+ GET    | /api/departments                                | departments#index
+ GET    | /api/departments/:id/week/:week                 | departments#show
+ POST   | /api/departments                                | departments#create
+ PATCH  | /api/departments/:id                            | departments#update
+ PUT    | /api/departments/:id                            | departments#update
+ DELETE | /api/departments/:id                            | departments#destroy
+ POST   | /api/people                                     | people#create
+ GET    | /api/people/:id                                 | people#show
+ PATCH  | /api/people/:id                                 | people#update
+ PUT    | /api/people/:id                                 | people#update
+ DELETE | /api/people/:id                                 | people#destroy
+ POST   | /api/shifts                                     | shifts#create
+ GET    | /api/shifts/:id                                 | shifts#show
+ PATCH  | /api/shifts/:id                                 | shifts#update
+ PUT    | /api/shifts/:id                                 | shifts#update
+ DELETE | /api/shifts/:id                                 | shifts#destroy
+ GET    | /api/shift_types                                | shift_types#index
+ POST   | /api/shift_types                                | shift_types#create
+ GET    | /api/shift_types/:id                            | shift_types#show
+ PATCH  | /api/shift_types/:id                            | shift_types#update
+ PUT    | /api/shift_types/:id                            | shift_types#update
+ DELETE | /api/shift_types/:id                            | shift_types#destroy
+ GET    | /api/roles                                      | roles#index
+ POST   | /api/roles                                      | roles#create
+ GET    | /api/roles/:id                                  | roles#show
+ PATCH  | /api/roles/:id                                  | roles#update
+ PUT    | /api/roles/:id                                  | roles#update
+ DELETE | /api/roles/:id                                  | roles#destroy
+ GET    | /api/people_filter_criteria/:dept_id/week/:week | filters#people
 
