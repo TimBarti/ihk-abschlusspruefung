@@ -645,3 +645,38 @@ todo
 - Implementierung von erstellen und aktualisieren von Schichten
 - Implementierung der Filter für die Schichttabelle
 - Implementierung von erstellen, bearbeiten und löschen Personen, Rollen etc.
+
+####Anhang 10: Screenshot vom alten Schichtplanner
+
+####Anhang 11: Screenshot vom neuen Schichtplanner
+
+####Anhang 12: alle API-Calls
+
+     Prefix | Verb   | URI Pattern                                     | Controller#Action
+------------|--------|-------------------------------------------------|---------------------
+departments | GET    | /api/departments                                | departments#index
+            | GET    | /api/departments/:id/week/:week                 | departments#show
+     people | POST   | /api/people                                     | people#create
+     person | GET    | /api/people/:id                                 | people#show
+            | PATCH  | /api/people/:id                                 | people#update
+            | PUT    | /api/people/:id                                 | people#update
+            | DELETE | /api/people/:id                                 | people#destroy
+     shifts | POST   | /api/shifts                                     | shifts#create
+      shift | GET    | /api/shifts/:id                                 | shifts#show
+            | PATCH  | /api/shifts/:id                                 | shifts#update
+            | PUT    | /api/shifts/:id                                 | shifts#update
+            | DELETE | /api/shifts/:id                                 | shifts#destroy
+shift_types | GET    | /api/shift_types                                | shift_types#index
+            | POST   | /api/shift_types                                | shift_types#create
+ shift_type | GET    | /api/shift_types/:id                            | shift_types#show
+            | PATCH  | /api/shift_types/:id                            | shift_types#update
+            | PUT    | /api/shift_types/:id                            | shift_types#update
+            | DELETE | /api/shift_types/:id                            | shift_types#destroy
+      roles | GET    | /api/roles                                      | roles#index
+            | POST   | /api/roles                                      | roles#create
+       role | GET    | /api/roles/:id                                  | roles#show
+            | PATCH  | /api/roles/:id                                  | roles#update
+            | PUT    | /api/roles/:id                                  | roles#update
+            | DELETE | /api/roles/:id                                  | roles#destroy
+            | GET    | /api/people_filter_criteria/:dept_id/week/:week | filters#people
+
