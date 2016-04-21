@@ -20,7 +20,7 @@
 - [x]  3.2.1 "Make or Buy"-Entscheidung
 - [x]  3.2.2 Projektkosten
 - [x]  3.2.3 Amortisationsdauer
-- [ ]  3.3 Anwendungsfälle
+- [x]  3.3 Anwendungsfälle
 - [x]  3.4 Lastenheft / Fachkonzept
 
 ### 4 Entwurfsphase

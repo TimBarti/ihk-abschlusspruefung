@@ -775,7 +775,7 @@ FROM (SELECT (SELECT json_agg(roles) AS roles
 
 ####Anhang 14: Use-Case Description
 
-__Benutzer__
+__Akteur__
 
 - normaler Mitarbeiter
 - Teamleiter
@@ -795,7 +795,7 @@ __Ziele__
 
 __führt zum Fehlschlag__
 
-- eigegebene Daten entschprechen nicht den Regeln
+- eingegebene Daten entschprechen nicht den Regeln
 
 __Erweiterungen__
 
