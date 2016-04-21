@@ -66,7 +66,7 @@ Durchgeführt wurde die Ausbildung bei der Firma eKomi Limited in Berlin. Das In
 Das Produkt ist es für Unternehmen unabhängige, transaktionsbasierte Bewertungen zu sammeln.
 Zu unsere Kunden zählen größtenteils Onlineshop, allerdings auch Banken und Versicherungen.
 Durch die unabhängig gesammelten Bewertungen, soll bei Neukunden Vertrauen für den Onlineshop geweckt werden.
-Desweiteren erhöhen die gesammelten Bewertungne in signifikantem Maße das SEO-Ranking.
+Desweiteren erhöhen die gesammelten Bewertungen in signifikantem Maße das SEO-Ranking.
 
 ####1.1 Projektbeschreibung
 
@@ -179,7 +179,7 @@ Vorgang | Mitarbeiter | Zeit (in Stunden) | Kosten (in €)
 --------|-------------|------------------|-------
 Entwicklungskosten | 1 Auszubildender | 70 | 350
 Erstellung des Lastenheftes | 1 Teamleiter | 2 | 50
-tägliches Feedback | 1 Teamleiter | 3 | 75
+Feedback nach einer Iteration | 1 Teamleiter | 3 | 75
 __Projektkosten gesamt:__ | | | __475__
 
 _Tabelle 2: Kostenaufstellung_
@@ -317,7 +317,7 @@ Desweiteren werden die dargestellten Informationen gefiltert, um das zu realisie
 Um den Nutzer zu helfen valide Daten (z.B. neue Personen) zu erstellen , werden die eingegeben Daten mithilfe von Stringoperationen auf ihre Vailidität überprüft. Dadurch können Daten überprüft werden bevor Sie zum Server gesendet werden.
 
 Da diese Form von Validierung durch deaktiveren von Javascript umgangen werden kann, ist es essenziell das es eine serverseitige Validierung gibt.
-Um das zu gewährleisten werden Constraints direkt in PostgreSQL angelegt. Diese Lösung bietet einen Kompromiss aus valider Daten in der Datenbank und einfache Benutzbarkeit für den Nutzer. Der Nachteil ist das die Validierungen in 2 Stellen stattfindet das bedeutet, wenn sich die Validierung ändert, muss der Quellcode an 2 Stellen angepasst werden.
+Um das zu gewährleisten werden Constraints direkt in PostgreSQL angelegt. Diese Lösung bietet einen Kompromiss aus valider Daten in der Datenbank und einfache Benutzbarkeit. Der Nachteil ist das die Validierungen in 2 Stellen stattfindet. Das bedeutet, wenn sich die Validierung ändert, muss der Quellcode an 2 Stellen angepasst werden.
 
 ####4.7 Pflichtenheft
 
@@ -332,11 +332,11 @@ Am Anfang der Implementierungsphase wurde ein Iterationsplan erstellt. Dieser le
 
 ####5.2 Implementierung der Datenstrukturen
 
-Basierend auf dem bereits erstelltem ER-Model wurde mit Hilfe des rails-generators die Tabellenstruktur erstellt. Das könnte für die People Tabelle so aussehen:
+Basierend auf dem bereits erstelltem ER-Model wurde mit Hilfe des `rails generators` die Tabellenstruktur erstellt. Das könnte für die People Tabelle so aussehen:
 `rails g model person name:string department:references`.
 
 Dieser Kommandozeilenbefehl erstellt Dateien für das Model, die Tests und die Migration.
-Migrations sind in Rails der Weg um die Struktur der Datenbank zu ändern. Sie erlauben es Änderungen an der Datenbank sehr einfach rückgängig zu machen. Die erstellte Migration sieht dann so aus:
+Migrations sind in Rails der Weg um die Struktur der Datenbank zu ändern. Sie erlauben es Änderungen an der Datenbank sehr einfach rückgängig zu machen. Die erstellte Migration sieht so aus:
 
 ```ruby
 class CreatePerson < ActiveRecord::Migration[5.0]
@@ -355,12 +355,12 @@ Nach ausführen von `rails db:migrate` wird dieser Code von ActiveRecord in das 
 
 ####5.3 Implementierung der Geschäftslogik
 
-Im folgenden soll der Prozess der Implementierung erläutert werden. Als erstes wird jedoch das allgemeine Setup vorgestellt werden. Da es sich bei Ruby und Javascript und Skriptsprachen handelt wurde auf eine IDE verzichtet und stattdessen der gesamte Code mit einem Text Editor erstellt und bearbeitet. Aufgrund seiner zahlreichen Features und Erweiterbarkeit durch Plugins ist die Wahl auf Sublime Text 3 gefallen.
+Im folgenden soll der Prozess der Implementierung erläutert werden. Als erstes wird jedoch das allgemeine Setup vorgestellt. Da es sich bei Ruby und Javascript und Skriptsprachen handelt wurde auf eine IDE verzichtet und stattdessen der gesamte Code mit einem Texteditor erstellt und bearbeitet. Aufgrund seiner zahlreichen Features und Erweiterbarkeit durch Packages ist die Wahl auf Sublime Text 3 gefallen.
 Der Code wurde mithilfe von Git versioniert, das bietet den Vorteil nach einem Fehler einfach auf einer frühere, funktionierende Version zurück gewechselt werden kann. Desweiteren gibt es die Möglichkeit neue Features in einem extra Branch zu entwickeln, dadurch hat man immer einen stabile Version.
 
 Um die Weiterentwicklung und Fehlersuche zu vereinfachen wurde großer Wert auf sinnvolle commit messages gelegt.
 Der Header ist maximal 50 Zeichen lang und fängt immer mit einem Großbuchstaben an.
-Der Body der Commit-Message ist durch eine Leerzeile getrennt und erklärt was und warum etwas gemacht wurde, statt zu erklären wie es gemacht wurde.
+Der Body der Commit-Message ist durch eine Leerzeile getrennt und erklärt was und warum etwas gemacht wurde, statt zu erklären wie es gemacht wurde. Generell sollte Code selbsterklärend sein, falls nicht sollte er durch Kommentare im Quelltext erklärt werden und nicht in der commit message.
 
 Aufgrund seiner Popularität und des kostenlosen Angebots wurde Github als Host für das Repository gewählt. Desweiteren erhält man dadurch die Möglichkeit ohne Probleme das Projekt auf einem anderen PC zu clonen bzw. bei einem neuen Release es von Github zu pullen. 
 
@@ -376,7 +376,7 @@ Um Authentifizierung zu implementieren wurde der Gem _Devise_ gewählt. Dieser i
 
 __Implementierung von erstellen und aktualisieren von Schichten:__
 
-Das aktualisieren und zuweisen von Schichten soll auf die selbe Weise geschehen. Die zu bearbeitenden Schichten werden durch das gedrückt halten der linken Maustaste ausgewählt. Ausgewählte Schichten sind durch eine andere Hintergrundfarbe hervorgehoben. Durch einen weiteren Klick auf die bereits ausgewählten Schichten öffnet sich ein Popup (Modal), innerhalb dessen werden alle zur Auswahl stehenden Schichten angezeigt. Mit einem Klick auf die neue Schicht werden alle zuvor markierten Schichten aktualisiert und die Hintergrundfarbe wird auf die Standardfarbe zurückgesetzt.
+Das aktualisieren und zuweisen von Schichten soll auf die selbe Weise geschehen. Die zu bearbeitenden Schichten werden durch das gedrückt halten der linken Maustaste ausgewählt. Ausgewählte Schichten sind durch eine andere Hintergrundfarbe hervorgehoben. Durch einen weiteren Klick auf die bereits ausgewählten Schichten öffnet sich ein Modal, _siehe Anhang 16: Screenshot von der Auswahl einer Schicht_, innerhalb dessen werden alle zur Auswahl stehenden Schichten angezeigt. Mit einem Klick auf die neue Schicht werden alle zuvor markierten Schichten aktualisiert und die Hintergrundfarbe wird auf die Standardfarbe zurückgesetzt.
 
 __Implementierung der Filter für die Schichttabelle:__
 
@@ -458,7 +458,7 @@ _Tabelle 3: Soll- /Ist-Vergleich_
 ####8.2 Lessons Learned
 
 Grundsätzlich konnte der Autor sein Wissen und seine Erfahrung im Projektmanagement deutlich verbessern.
-Hinzukommt das verbesserte Verständis von Test Driven Development in Rails, besseres allgemeines Verständnis von AngularJS, vertieftes Wissen von PostgreSQL und komplexen SQL-queries und mehr praktische Erfahrung beim erstellen eines Continious-Integration-Workflows.
+Hinzukommt das verbesserte Verständis von Test Driven Development in Rails, besseres allgemeines Verständnis von AngularJS, vertieftes Wissen von PostgreSQL und komplexen SQL-queries und mehr praktische Erfahrung beim Erstellen eines Continious-Integration-Workflows.
 
 ####8.3 Ausblick
 
@@ -663,7 +663,7 @@ Die Antwort der API für die Schichtansicht sieht z.B. so aus:
 
 ####Anhang 8: Pflichtenheft
 
-Der Auszug des Pflichtenhefts wird die Umsetzung definiert.
+Der Auszug des Pflichtenhefts gibt wieder, wie die Anforderungen umgesetzt werden soll.
 
 __Umsetzung der Anforderungen__
 
@@ -804,3 +804,5 @@ __Erweiterungen__
 ####Anhang 15: Use-Case Diagram
 
 atm in extra file
+
+####Anhang 16: Screenshot von der Auswahl einer Schicht

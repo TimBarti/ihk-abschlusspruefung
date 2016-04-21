@@ -72,3 +72,4 @@
 - [x] Anhang 13: SQL-query für alle Filterkriterien
 - [x] Anhang 14: Use-Case Description
 - [x] Anhang 15: Use-Case Diagram
+- [ ] Anhang 16: Screenshot von der Auswahl einer Schicht
