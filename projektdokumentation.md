@@ -124,8 +124,8 @@ Diese wird in _Tabelle 1: Grobe Zeitplanung_ dargestellt. Diese können allerdin
 Projektphase | geplante Zeit (in Stunden)
 -------------|--------------
 Analyse | 5
-Entwurf | 10
-Implementierung | 35
+Entwurf | 8
+Implementierung | 37
 Deployment | 10
 Dokumentation | 10
 
