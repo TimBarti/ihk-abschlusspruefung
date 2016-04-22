@@ -73,3 +73,4 @@
 - [x] Anhang 14: Use-Case Description
 - [x] Anhang 15: Use-Case Diagram
 - [ ] Anhang 16: Screenshot von der Auswahl einer Schicht
+- [ ] Anhang 17: Screenshot von den Filteroptionen

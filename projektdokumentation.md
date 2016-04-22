@@ -528,6 +528,8 @@ __Personal:__
 Die Anwendung soll folgende Kriterien erfüllen:
 
 - übersichtliche Darstellung aller Personen und ihrer Schichten in einer Abteilung in einer Woche
+- der Tabellenkopf soll fixiert sein
+- die Tabelle soll eine maximale Länge haben, so das die Seite selbst nie gescrollt wird, sondern nur die Tabelle
 - Möglichkeit die Personen einer anderen Abteilung zu betrachten
 - Möglichkeit die letzte bzw. nächste Woche zu betrachten
 - Möglichkeit über Auswahl von Checkboxen nach Rolle, Sprache, Fähigkeit und/ oder Schicht zu filtern
@@ -666,6 +668,49 @@ Die Antwort der API für die Schichtansicht sieht z.B. so aus:
 Der Auszug des Pflichtenhefts gibt wieder, wie die Anforderungen umgesetzt werden soll.
 
 __Umsetzung der Anforderungen__
+
+__A1:__
+
+Die Schichtansicht soll alle Personen einer Abteilung und deren Rollen, Fähigkeiten, Sprachen und Schichten in der dieser Reihenfolgen darstellen. Die Tabelle soll mithilfe von Bootstrap angelegt werden um einen einheitliches Aussehen sicherzustellen, um das zu erreichen wird dem table tag die Bootstrapklasse `table` hinzugefügt.
+Der gesamte Schichtplanner soll desweiteren komplett in AngularJS umgesetzt werden.
+
+__A2:__
+
+Der Tabellenkopf soll fixiert sein, um das umzusetzen wird dem table tag die Bootstrapklasse `fixed_headers` zugewiesen.
+
+__A3:__
+
+Die Tabelle soll maximal 60% der Höhe des Bildschirms einnehmen. Dadurch wird sichergestellt das immer alle  Komponenten erreichbar sind. Wenn die Tabelle mehr Zeilen hat, soll die Tabelle scrollbar werden. Das ganze soll in CSS umgesetzt werden.
+
+__A4:__
+
+Über der Tabelle soll ein Dropdownmenu zur Verfügung gestellt werden das es dem Nutzer erlaubt die Personen in einer anderen Abteilung zu betrachten.
+
+__A5:__
+
+Unter der Tabelle sollen Buttons sein die einen per Klick die Schichten der nächsten bzw. vorherigen Woche anzeigen.
+
+__A6:__
+
+Für jede Rolle, Fähigkeit, Sprache und Schicht soll es eine Checkbox geben. Ein Klick auf die Checkbox filtert den Inhalt der Tabelle nach Personen die dieses Kriterium erfüllen.
+Wenn man mehrere Kriterien innerhalb einer Kategorie anwählt, sollen diese ODER verknüpft sein. Das bedeuted in dem Fall das die Checkboxen für deutsch und englisch gesetzt sind, werden Personen angezeigt die deutsch _oder_ englisch sprechen.
+Falls Kriterien aus unterschiedlichen Kategorien ausgewählt werden, sollen diese UND verknüpft werden. Ein Beispiel wäre, wenn jemand die Checkboxen für Support-Agent und englisch auswählt werden alle Personen angezeigt die diese Kriterien besitzen, allerdings müssen sie nicht nur diese Kriterien haben. Es würden in diesem Beispiel auch Personen angezeigt werden die Support-Agents sind und deutsch und englisch sprechen.
+
+Desweiteren sollen die Kriterien nach Kategorie in Dropdownmenus gruppiert werden, siehe _Anhang 17: Screenshot von den Filteroptionen_.
+
+Kriterien die in der aktuellen Woche nicht auftreten sollen nicht als Filteroption zur Verfügung stehen, z.B. hat in einer Woche niemand Urlaub, dann soll Checkbox für die Urlaubsschicht nicht im Dropdownmenu für die Schichten erscheinen.
+
+__A7:__
+
+Als letzte Filteroption soll es eine Textfeld geben. Die Eingabe wird mit den Namen verglichen, dabei kann sich der gesuchte String irgendwo im Namen befinden. Wenn nach dem Buchstaben 'm' gesucht wird, würden sowohl Namen wie Timon als auch Max angezeigt werden. Die Groß- und Kleinschreibung spielt keine Rolle.
+
+Der gesuchte Name wird auch mit den bereits aktiven Filtern UND vernüpft.
+
+__A8:__
+
+
+
+__A9:__
 
 
 
@@ -806,3 +851,5 @@ __Erweiterungen__
 atm in extra file
 
 ####Anhang 16: Screenshot von der Auswahl einer Schicht
+
+####Anhang 17: Screenshot von den Filteroptionen
